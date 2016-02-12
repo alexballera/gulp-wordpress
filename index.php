@@ -14,12 +14,12 @@
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source
-                                                srcset="http://localhost/wp-content/themes/twentyfifteen-child/images/responsive.svg,
-                                                http://localhost/wp-content/themes/twentyfifteen-child/images/responsive@2x.svg 2x">
+                                                srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/responsive.svg,
+                                                http://localhost/wp-content/themes/twentyfifteen-child/img/responsive@2x.svg 2x">
                                                 <img
-                                                src="http://localhost/wp-content/themes/twentyfifteen-child/images/responsive.svg"
-                                                srcset="http://localhost/wp-content/themes/twentyfifteen-child/images/responsive.svg,
-                                                http://localhost/wp-content/themes/twentyfifteen-child/images/responsive@2x.svg 2x"
+                                                src="http://localhost/wp-content/themes/twentyfifteen-child/img/responsive.svg"
+                                                srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/responsive.svg,
+                                                http://localhost/wp-content/themes/twentyfifteen-child/img/responsive@2x.svg 2x"
                                                 alt="Responsive Web Design">
                                                 <figcaption>Responsive Web Design</figcaption>
                                               </picture>
@@ -34,12 +34,12 @@
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source
-                                                      srcset="http://localhost/wp-content/themes/twentyfifteen-child/images/mobile-friendly.svg,
-                                                      http://localhost/wp-content/themes/twentyfifteen-child/images/mobile-friendly@2x.svg 2x">
+                                                      srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly.svg,
+                                                      http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly@2x.svg 2x">
                                                       <img
-                                                      src="http://localhost/wp-content/themes/twentyfifteen-child/images/mobile-friendly.svg"
-                                                      srcset="http://localhost/wp-content/themes/twentyfifteen-child/images/mobile-friendly.svg,
-                                                      http://localhost/wp-content/themes/twentyfifteen-child/images/mobile-friendly@2x.svg 2x"
+                                                      src="http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly.svg"
+                                                      srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly.svg,
+                                                      http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly@2x.svg 2x"
                                                       alt="Mobile Friendly">
                                                       <figcaption>Mobile Optimization</figcaption>
                                               </picture>
@@ -180,12 +180,12 @@
         <div>
           <picture class="nav__mobile--logo--picture">
             <source
-            srcset="http://localhost/wp-content/themes/twentyfifteen-child/images/alex-ballera.svg,
-            http://localhost/wp-content/themes/twentyfifteen-child/images/alex-ballera@2x.svg 2x">
+            srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.svg,
+            http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera@2x.svg 2x">
             <img
-            src="http://localhost/wp-content/themes/twentyfifteen-child/images/alex-ballera.jpg"
-            srcset="http://localhost/wp-content/themes/twentyfifteen-child/images/alex-ballera.svg,
-            images/alex-ballera@2x.svg 2x"
+            src="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.jpg"
+            srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.svg,
+            img/alex-ballera@2x.svg 2x"
             alt="Alex Ballera | Web Developer">
             <figcaption>AlexBallera</figcaption>
           </picture>

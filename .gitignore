@@ -1,5 +1,8 @@
 node_modules
 bower_components
+img
+js
+css
 *.tmp.*
 .sass-cache
 .idea

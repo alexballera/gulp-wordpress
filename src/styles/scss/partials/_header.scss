@@ -6,7 +6,7 @@
     padding: 3em 0;
     margin-top: $header-height;
     z-index: 10;
-    @include background('http://localhost/wp-content/themes/twentyfifteen-child/images/background-header.jpg', $background);
+    @include background('http://localhost/wp-content/themes/twentyfifteen-child/img/background-header.jpg', $background);
     background-attachment: fixed;
     @include respond-to(md) {
       margin-top: $header-height*$header-mult;

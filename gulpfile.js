@@ -33,19 +33,19 @@ const globs = {
     main: './src/styles/scss/style.scss',
     watch: './src/styles/scss/**/*.scss',
     src: './src/styles',
-    wp: './styles'
+    wp: './css'
   },
   scripts: {
     main: './src/scripts/main.js',
     watch: './src/scripts/main.js',
     src: './src/scripts',
-    wp: './scripts'
+    wp: './js'
   },
   images: {
     main: './src/images/**',
     watch: './src/images/**/*.*',
     src: './src/images',
-    wp: './images'
+    wp: './img'
   },
   videos: {
     main: './src/videos/**',
@@ -57,7 +57,7 @@ const globs = {
     main: './src/styles/fonts/**',
     watch: './src/styles/fonts/**/*.*',
     src: './src/styles/fonts',
-    wp: './styles/fonts'
+    wp: './css/fonts'
   }
 }
 

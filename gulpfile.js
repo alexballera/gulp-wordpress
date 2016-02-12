@@ -15,6 +15,7 @@ const imagemin = require('gulp-imagemin')
 const pngquant = require('imagemin-pngquant')
 const imageminSvgo = require('imagemin-svgo')
 const cache = require('gulp-cache')
+const del = require('del')
 // Para que babelify y jquery trabajen se deben instalar jquery, babel-preset-es2015 babel-preset-react
 // sudo npm install --save jquery
 // sudo npm install --save-dev babel-preset-es2015 babel-preset-react
@@ -67,27 +68,18 @@ gulp.task('serve', () => {
     logPrefix: 'BS',
     server: {
       baseDir: [globs.wp]
-    }
-    // host: '0.0.0.0'
-    // port: 8000,
-    // ui: {
-    //   port: 8001
-    // }
-    // browser: ['chromium-browser'
+    },
+    port: 8080,
+    ui: {
+      port: 8081
+    },
+    browser: ['google-chrome'
     // 'firefox'
-    // ]
+    ]
   })
 })
 
-// HTML minificado
-gulp.task('build:html', () => {
-  return gulp.src(globs.html.main)
-    // .pipe(gulp.dest(globs.build))
-    // .pipe(htmlmin({collapseWhitespace: true})))
-    .pipe(gulp.dest(globs.wp))
-})
-
-// Styles: CSS  Minificado
+// Styles: Compila SASS ~> CSS
 gulp.task('build:styles', ['styles'], () => {
   gulp.start('uncss')
 })
@@ -106,7 +98,7 @@ gulp.task('uncss', () => {
     }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
-    .pipe(gulp.dest(globs.wp))
+    .pipe(gulp.dest(globs.styles.src))
 })
 
 // Scripts: todos los archivos JS concatenados en uno solo minificado
@@ -141,20 +133,14 @@ gulp.task('build:images', () => {
     .pipe(gulp.dest(globs.images.wp))
 })
 
-// Inyectando css y js al index.html
-gulp.task('inject', () => {
-  gulp.src(globs.html.main)
-    .pipe(inject(gulp.src([globs.styles.src + '/style.min.css', globs.scripts.src + '/main.min.js'], {read: false}), {relative: true}))
-    .pipe(gulp.dest(globs.src))
-})
-
-// Inyectando las librerias Bower
-gulp.task('wiredep', () => {
-  gulp.src('./src/*.html')
-    .pipe(wiredep({
-      directory: './src/bower_components'
-    }))
-    .pipe(gulp.dest(globs.src))
+// Clean
+gulp.task('clean', (cb) => {
+  return del([globs.styles.wp,
+    globs.scripts.wp,
+    globs.images.wp,
+    globs.videos.wp,
+    globs.wp + 'style.css'
+  ], cb)
 })
 
 // Copy
@@ -163,6 +149,8 @@ gulp.task('copy', () => {
     .pipe(gulp.dest(globs.fonts.wp))
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.wp))
+  gulp.src(globs.html.main)
+    .pipe(gulp.dest(globs.wp))
   gulp.src(globs.src + '/analyticstracking.php')
     .pipe(gulp.dest(globs.wp))
 })
@@ -184,10 +172,11 @@ gulp.task('watch', () => {
 })
 
 // Build
-gulp.task('build', ['build:styles', 'build:scripts', 'build:images', 'build:html', 'watch'])
+gulp.task('build', ['clean'], () => {
+  gulp.start('build:styles', 'build:scripts', 'build:images', 'watch')
+})
 
 // Default
 gulp.task('default', ['build'], () => {
   gulp.start('copy', 'serve')
 })
-

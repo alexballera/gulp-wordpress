@@ -18,8 +18,8 @@
  *    user zoom.
  */
 @import url(../twentyfifteen/style.css);
-@import url(./styles/fonts/css/font-awesome.css);
-@import url(./styles/fonts/fonts-mfizz/font-mfizz.css);
+@import url(css/fonts/css/font-awesome.css);
+@import url(css/fonts/fonts-mfizz/font-mfizz.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -725,7 +725,6 @@ h3 {
   text-align: center;
   padding: 3em 0;
   margin-top: 3rem;
-  z-index: 10;
   background-image: url("http://localhost/wp-content/themes/twentyfifteen-child/img/background-header.jpg");
   background-color: #EEEEEE;
   background-size: cover;

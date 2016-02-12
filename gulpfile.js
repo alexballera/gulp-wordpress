@@ -3,9 +3,7 @@ const browserSync = require('browser-sync')
 const reload = browserSync.reload
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
-const cssnano = require('gulp-cssnano')
 const rename = require('gulp-rename')
-const uncss = require('gulp-uncss')
 const browserify = require('browserify')
 const source = require('vinyl-source-stream')
 const buffer = require('vinyl-buffer')
@@ -84,24 +82,11 @@ gulp.task('build:php', () => {
     .pipe(gulp.dest(globs.wp))
 })
 // Styles: Compila SASS ~> CSS
-// gulp.task('build:styles', ['styles'], () => {
-//   gulp.start('uncss')
-// })
 gulp.task('build:styles', () => {
   return gulp.src(globs.styles.main)
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest(globs.wp))
-    .pipe(gulp.dest(globs.styles.src))
-})
-// Optimiza styles.min.css
-gulp.task('uncss', () => {
-  return gulp.src(globs.styles.src + '/style.css')
-    // .pipe(uncss({
-    //   html: ['index.php', globs.php.watch]
-    // }))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(cssnano())
     .pipe(gulp.dest(globs.styles.src))
 })
 
@@ -176,10 +161,10 @@ gulp.task('watch', () => {
 
 // Build
 gulp.task('build', ['clean'], () => {
-  gulp.start('build:styles', 'build:scripts', 'build:images', 'build:php', 'watch')
+  gulp.start('build:styles', 'build:scripts', 'build:images', 'build:php')
 })
 
 // Default
 gulp.task('default', ['build'], () => {
-  gulp.start('copy')
+  gulp.start('copy', 'watch')
 })

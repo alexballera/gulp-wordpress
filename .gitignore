@@ -10,5 +10,3 @@ logs
 *.log
 npm-debug.log*
 .publish
-*.php
-style.css

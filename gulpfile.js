@@ -25,9 +25,9 @@ const globs = {
   build: './build',
   src: './src',
   wp: './',
-  html: {
-    main: './src/index.html',
-    watch: './src/**/*.html'
+  php: {
+    main: './src/*.php',
+    watch: './src/**/*.php'
   },
   styles: {
     main: './src/styles/scss/style.scss',
@@ -78,16 +78,16 @@ gulp.task('serve', () => {
     ]
   })
 })
-// HTML
-gulp.task('build:html', () => {
-  gulp.src(globs.html.main)
+// PHP
+gulp.task('build:php', () => {
+  gulp.src(globs.php.main)
     .pipe(gulp.dest(globs.wp))
 })
 // Styles: Compila SASS ~> CSS
-gulp.task('build:styles', ['styles'], () => {
-  gulp.start('uncss')
-})
-gulp.task('styles', () => {
+// gulp.task('build:styles', ['styles'], () => {
+//   gulp.start('uncss')
+// })
+gulp.task('build:styles', () => {
   return gulp.src(globs.styles.main)
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version'))
@@ -97,9 +97,9 @@ gulp.task('styles', () => {
 // Optimiza styles.min.css
 gulp.task('uncss', () => {
   return gulp.src(globs.styles.src + '/style.css')
-    .pipe(uncss({
-      html: ['index.html', globs.html.watch]
-    }))
+    // .pipe(uncss({
+    //   html: ['index.php', globs.php.watch]
+    // }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(gulp.dest(globs.styles.src))
@@ -144,7 +144,7 @@ gulp.task('clean', (cb) => {
     globs.images.wp,
     globs.videos.wp,
     globs.wp + 'style.css',
-    globs.wp + 'index.html'
+    globs.wp + '*.php'
   ], cb)
 })
 
@@ -154,15 +154,13 @@ gulp.task('copy', () => {
     .pipe(gulp.dest(globs.fonts.wp))
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.wp))
-  gulp.src(globs.html.main)
-    .pipe(gulp.dest(globs.wp))
-  gulp.src(globs.src + '/analyticstracking.php')
+  gulp.src(globs.php.main)
     .pipe(gulp.dest(globs.wp))
 })
 
 // Reload
 gulp.watch([
-  globs.html.watch,
+  globs.php.watch,
   globs.styles.watch,
   globs.scripts.watch,
   './bower.json'
@@ -173,15 +171,15 @@ gulp.task('watch', () => {
   gulp.watch(globs.styles.watch, ['build:styles'])
   gulp.watch(globs.scripts.watch, ['build:scripts'])
   gulp.watch(globs.images.watch, ['build:images'])
-  gulp.watch(globs.html.watch, ['build:html'])
+  gulp.watch(globs.php.watch, ['build:php'])
 })
 
 // Build
 gulp.task('build', ['clean'], () => {
-  gulp.start('build:styles', 'build:scripts', 'build:images', 'build:html', 'watch')
+  gulp.start('build:styles', 'build:scripts', 'build:images', 'build:php', 'watch')
 })
 
 // Default
 gulp.task('default', ['build'], () => {
-  gulp.start('copy', 'serve')
+  gulp.start('copy')
 })

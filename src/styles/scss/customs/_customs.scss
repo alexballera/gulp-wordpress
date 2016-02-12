@@ -32,3 +32,8 @@ h3{
       padding-top: 0;
   }
 }
+@media screen and (min-width: 59.6875em){
+  body:before {
+    display: none;
+  }
+}

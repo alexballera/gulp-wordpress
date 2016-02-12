@@ -78,7 +78,11 @@ gulp.task('serve', () => {
     ]
   })
 })
-
+// HTML
+gulp.task('build:html', () => {
+  gulp.src(globs.html.main)
+    .pipe(gulp.dest(globs.wp))
+})
 // Styles: Compila SASS ~> CSS
 gulp.task('build:styles', ['styles'], () => {
   gulp.start('uncss')
@@ -139,7 +143,8 @@ gulp.task('clean', (cb) => {
     globs.scripts.wp,
     globs.images.wp,
     globs.videos.wp,
-    globs.wp + 'style.css'
+    globs.wp + 'style.css',
+    globs.wp + 'index.html'
   ], cb)
 })
 
@@ -173,7 +178,7 @@ gulp.task('watch', () => {
 
 // Build
 gulp.task('build', ['clean'], () => {
-  gulp.start('build:styles', 'build:scripts', 'build:images', 'watch')
+  gulp.start('build:styles', 'build:scripts', 'build:images', 'build:html', 'watch')
 })
 
 // Default

@@ -61,32 +61,31 @@ const globs = {
 }
 
 // Servidor - Browsersync
-// gulp.task('serve', () => {
-//   browserSync.init({
-//     notify: false,
-//     logPrefix: 'BS',
-//     server: {
-//       baseDir: [globs.wp]
-//     },
-//     host: '0.0.0.0'
-//     port: 8000,
-//     ui: {
-//       port: 8001
-//     },
-//     browser: ['chromium-browser'
-//     'firefox'
-//     ]
-//   })
-// })
+gulp.task('serve', () => {
+  browserSync.init({
+    notify: false,
+    logPrefix: 'BS',
+    server: {
+      baseDir: [globs.wp]
+    }
+    // host: '0.0.0.0'
+    // port: 8000,
+    // ui: {
+    //   port: 8001
+    // }
+    // browser: ['chromium-browser'
+    // 'firefox'
+    // ]
+  })
+})
 
 // HTML minificado
-// gulp.task('build:html', () => {
-//   return gulp.src(globs.html.main)
-//     // .pipe(gulp.dest(globs.build))
-//     // .pipe(htmlmin({collapseWhitespace: true}))
-//     .pipe(gulp.dest(globs.build))
-//     .pipe(gulp.dest(globs.dist))
-// })
+gulp.task('build:html', () => {
+  return gulp.src(globs.html.main)
+    // .pipe(gulp.dest(globs.build))
+    // .pipe(htmlmin({collapseWhitespace: true})))
+    .pipe(gulp.dest(globs.wp))
+})
 
 // Styles: CSS  Minificado
 gulp.task('build:styles', ['styles'], () => {
@@ -170,7 +169,7 @@ gulp.task('copy', () => {
 
 // Reload
 gulp.watch([
-  // globs.html.watch,
+  globs.html.watch,
   globs.styles.watch,
   globs.scripts.watch,
   './bower.json'
@@ -181,13 +180,14 @@ gulp.task('watch', () => {
   gulp.watch(globs.styles.watch, ['build:styles'])
   gulp.watch(globs.scripts.watch, ['build:scripts'])
   gulp.watch(globs.images.watch, ['build:images'])
+  gulp.watch(globs.html.watch, ['build:html'])
 })
 
 // Build
-gulp.task('build', ['build:styles', 'build:scripts', 'build:images', 'watch'])
+gulp.task('build', ['build:styles', 'build:scripts', 'build:images', 'build:html', 'watch'])
 
 // Default
 gulp.task('default', ['build'], () => {
-  gulp.start('copy')
+  gulp.start('copy', 'serve')
 })
 

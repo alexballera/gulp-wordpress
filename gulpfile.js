@@ -97,7 +97,7 @@ gulp.task('build:scripts', () => {
     .pipe(gulp.dest(globs.scripts.dist))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest(globs.scripts.src))
+    .pipe(gulp.dest(globs.scripts.dist))
 })
 
 // Images

@@ -22,7 +22,7 @@ const del = require('del')
 const globs = {
   build: './build',
   src: './src',
-  wp: './',
+  dist: './dist',
   php: {
     main: './src/*.php',
     watch: './src/**/*.php'
@@ -31,31 +31,31 @@ const globs = {
     main: './src/styles/scss/style.scss',
     watch: './src/styles/scss/**/*.scss',
     src: './src/styles',
-    wp: './css'
+    dist: './dist/css'
   },
   scripts: {
     main: './src/scripts/main.js',
     watch: './src/scripts/main.js',
     src: './src/scripts',
-    wp: './js'
+    dist: './dist/js'
   },
   images: {
     main: './src/images/**',
     watch: './src/images/**/*.*',
     src: './src/images',
-    wp: './img'
+    dist: './dist/img'
   },
   videos: {
     main: './src/videos/**',
     watch: './src/videos/**/*.*',
     src: './src/videos',
-    wp: './videos'
+    dist: './dist/videos'
   },
   fonts: {
     main: './src/styles/fonts/**',
     watch: './src/styles/fonts/**/*.*',
     src: './src/styles/fonts',
-    wp: './css/fonts'
+    dist: './dist/css/fonts'
   }
 }
 
@@ -65,7 +65,7 @@ gulp.task('serve', () => {
     notify: false,
     logPrefix: 'BS',
     server: {
-      baseDir: [globs.wp]
+      baseDir: [globs.dist]
     },
     port: 8080,
     ui: {
@@ -79,14 +79,14 @@ gulp.task('serve', () => {
 // PHP
 gulp.task('build:php', () => {
   gulp.src(globs.php.main)
-    .pipe(gulp.dest(globs.wp))
+    .pipe(gulp.dest(globs.dist))
 })
 // Styles: Compila SASS ~> CSS
 gulp.task('build:styles', () => {
   return gulp.src(globs.styles.main)
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest(globs.wp))
+    .pipe(gulp.dest(globs.dist))
     .pipe(gulp.dest(globs.styles.src))
 })
 
@@ -97,11 +97,11 @@ gulp.task('build:scripts', () => {
     .bundle()
     .pipe(source('main.js'))
     .pipe(buffer())
-    .pipe(gulp.dest(globs.scripts.wp))
+    .pipe(gulp.dest(globs.scripts.dist))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(globs.scripts.src))
-    .pipe(gulp.dest(globs.scripts.wp))
+    .pipe(gulp.dest(globs.scripts.dist))
 })
 
 // Images
@@ -119,28 +119,24 @@ gulp.task('build:images', () => {
         { removeEmptyAttrs: false } // don't remove Empty Attributes from the SVG
       ]
     })))
-    .pipe(gulp.dest(globs.images.wp))
+    .pipe(gulp.dest(globs.images.dist))
 })
 
 // Clean
 gulp.task('clean', (cb) => {
-  return del([globs.styles.wp,
-    globs.scripts.wp,
-    globs.images.wp,
-    globs.videos.wp,
-    globs.wp + 'style.css',
-    globs.wp + '*.php'
-  ], cb)
+  return del(globs.dist, cb)
 })
 
 // Copy
 gulp.task('copy', () => {
   gulp.src(globs.fonts.src + '/**/*.*')
-    .pipe(gulp.dest(globs.fonts.wp))
+    .pipe(gulp.dest(globs.fonts.dist))
   gulp.src(globs.videos.watch)
-    .pipe(gulp.dest(globs.videos.wp))
+    .pipe(gulp.dest(globs.videos.dist))
   gulp.src(globs.php.main)
-    .pipe(gulp.dest(globs.wp))
+    .pipe(gulp.dest(globs.dist))
+  gulp.src(globs.src + '/screenshot.png')
+    .pipe(gulp.dest(globs.dist))
 })
 
 // Reload

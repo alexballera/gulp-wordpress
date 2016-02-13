@@ -505,10 +505,6 @@ h3 {
     .title {
       padding-top: 0; } }
 
-@media screen and (min-width: 59.6875em) {
-  body:before {
-    display: none; } }
-
 /** Navbar */
 #responsive,
 #projects,
@@ -1384,3 +1380,7 @@ h3 {
   .form__modal input[type="text"] {
     line-height: 1.5rem;
     height: 100%; } }
+
+@media screen and (min-width: 59.6875em) {
+  body:before {
+    display: none; } }

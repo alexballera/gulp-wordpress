@@ -14,7 +14,7 @@ const pngquant = require('imagemin-pngquant')
 const imageminSvgo = require('imagemin-svgo')
 const cache = require('gulp-cache')
 const del = require('del')
-// Para que babelify y jquery trabajen se deben instalar jquery, babel-preset-es2015 babel-preset-react
+// Para que babelify y jquery trabajen: instalar jquery, babel-preset-es2015 babel-preset-react
 // sudo npm install --save jquery
 // sudo npm install --save-dev babel-preset-es2015 babel-preset-react
 
@@ -71,9 +71,7 @@ gulp.task('serve', () => {
     ui: {
       port: 8081
     },
-    browser: ['google-chrome'
-    // 'firefox'
-    ]
+    browser: 'google-chrome'
   })
 })
 // PHP
@@ -87,7 +85,6 @@ gulp.task('build:styles', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest(globs.dist))
-    .pipe(gulp.dest(globs.styles.src))
 })
 
 // Scripts: todos los archivos JS concatenados en uno solo minificado
@@ -101,12 +98,11 @@ gulp.task('build:scripts', () => {
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(globs.scripts.src))
-    .pipe(gulp.dest(globs.scripts.dist))
 })
 
 // Images
-gulp.task('build:images', () => {
-  return gulp.src(globs.images.main)
+gulp.task('build:images', ['screenshot'], () => {
+  gulp.src(globs.images.main)
     .pipe(cache(imagemin({
       optimizationLevel: 7,
       progressive: true,
@@ -121,6 +117,22 @@ gulp.task('build:images', () => {
     })))
     .pipe(gulp.dest(globs.images.dist))
 })
+gulp.task('screenshot', () => {
+  gulp.src(globs.src + '/screenshot.png')
+    .pipe(cache(imagemin({
+      optimizationLevel: 7,
+      progressive: true,
+      interlaced: true,
+      multipass: true,
+      use: [pngquant(), imageminSvgo()],
+      svgoPlugins: [
+        { removeViewBox: false }, // don't remove the viewbox atribute from the SVG
+        { removeUselessStrokeAndFill: false }, // don't remove Useless Strokes and Fills
+        { removeEmptyAttrs: false } // don't remove Empty Attributes from the SVG
+      ]
+    })))
+    .pipe(gulp.dest(globs.dist))
+})
 
 // Clean
 gulp.task('clean', (cb) => {
@@ -133,10 +145,6 @@ gulp.task('copy', () => {
     .pipe(gulp.dest(globs.fonts.dist))
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.dist))
-  gulp.src(globs.php.main)
-    .pipe(gulp.dest(globs.dist))
-  gulp.src(globs.src + '/screenshot.png')
-    .pipe(gulp.dest(globs.dist))
 })
 
 // Reload

@@ -29,7 +29,7 @@
     <meta name="twitter:description" content="<?php bloginfo('description'); ?>">
 
     <!-- Open Graph data -->
-    <meta property="og:url" content=" http://alexballera.com/" />
+    <meta property="og:url" content=" <?php bloginfo('url'); ?>" />
     <meta property="og:title" content="<?php bloginfo('name'); ?>" />
     <meta property="og:description" content="<?php bloginfo('description'); ?>" />
     <meta property="og:type" content="article" />

@@ -94,9 +94,9 @@
             </div>
             <nav class="nav__menu--navbar">
                   <ul id="navbarMenu" class="nav__menu--list">
-                      <li class="nav__menu--list--item"><a href="#responsive">Responsive</a></li>
-                      <li class="nav__menu--list--item"><a href="#projects">Proyectos</a></li>
-                      <li class="nav__menu--list--item"><a href="#articles">Artículos</a></li>
+                      <li class="nav__menu--list--item"><a href="http://alexballera.com/#responsive">Responsive</a></li>
+                      <li class="nav__menu--list--item"><a href="http://alexballera.com/#projects">Proyectos</a></li>
+                      <li class="nav__menu--list--item"><a href="http://alexballera.com/#articles">Artículos</a></li>
                       <li class="nav__menu--list--item"><a href="#openModal">Contáctame</a></li>
                   </ul>
             </nav>

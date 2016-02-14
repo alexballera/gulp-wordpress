@@ -14,12 +14,12 @@
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source
-                                                srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/responsive.svg,
-                                                http://localhost/wp-content/themes/twentyfifteen-child/img/responsive@2x.svg 2x">
+                                                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/responsive.svg,
+                                                <?php echo get_stylesheet_directory_uri(); ?>/img/responsive@2x.svg 2x">
                                                 <img
-                                                src="http://localhost/wp-content/themes/twentyfifteen-child/img/responsive.svg"
-                                                srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/responsive.svg,
-                                                http://localhost/wp-content/themes/twentyfifteen-child/img/responsive@2x.svg 2x"
+                                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/responsive.svg"
+                                                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/responsive.svg,
+                                                <?php echo get_stylesheet_directory_uri(); ?>/img/responsive@2x.svg 2x"
                                                 alt="Responsive Web Design">
                                                 <figcaption>Responsive Web Design</figcaption>
                                               </picture>
@@ -34,12 +34,12 @@
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source
-                                                      srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly.svg,
-                                                      http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly@2x.svg 2x">
+                                                      srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly.svg,
+                                                      <?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly@2x.svg 2x">
                                                       <img
-                                                      src="http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly.svg"
-                                                      srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly.svg,
-                                                      http://localhost/wp-content/themes/twentyfifteen-child/img/mobile-friendly@2x.svg 2x"
+                                                      src="<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly.svg"
+                                                      srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly.svg,
+                                                      http://<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly@2x.svg 2x"
                                                       alt="Mobile Friendly">
                                                       <figcaption>Mobile Optimization</figcaption>
                                               </picture>

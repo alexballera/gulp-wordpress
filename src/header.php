@@ -8,7 +8,7 @@
     <meta name="author" content="<?php bloginfo('admin_email'); ?>">
 
     <!-- SEO & SEM -->
-    <meta name="description" content="Alex Ballera. Front-End Developer: Mobile Friendly, Responsive Web Design, JavaScript, HTML5, CSS3,...">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="keywords" content="Responsive Web Design, Mobile First, Mobile Friendly, JavaScript, HTML5, CSS3">
 
     <!-- Google Authorship and Publisher Markup -->
@@ -16,30 +16,25 @@
     <link rel="publisher" href="https://plus.google.com/+AlexanderBalleraLugo/posts"/>
 
     <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="AlexBallera | Web Developer">
-    <meta itemprop="description" content="Alex Ballera. Front-End Developer: Mobile Friendly, Responsive Web Design, JavaScript, HTML5, CSS3,...">
+    <meta itemprop="name" content="<?php bloginfo('name'); ?>">
+    <meta itemprop="description" content="<?php bloginfo('description'); ?>">
     <meta itemprop="image" content="https://raw.githubusercontent.com/alexballera/mi-portafolio/master/src/img/alex-ballera.jpg">
 
     <!-- Twitter Card data: Twitter summary card with large image must be at least 280x150px -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@alexballera" />
     <meta name="twitter:creator" content="@alexballera">
-    <meta name="twitter:title" content="AlexBallera | Web Developer">
+    <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
     <meta name="twitter:image:src" content="https://raw.githubusercontent.com/alexballera/mi-portafolio/master/src/img/alex-ballera.jpg">
-    <meta name="twitter:description" content="Alex Ballera. Front-End Developer: Mobile Friendly, Responsive Web Design, JavaScript, HTML5, CSS3,...">
+    <meta name="twitter:description" content="<?php bloginfo('description'); ?>">
 
     <!-- Open Graph data -->
     <meta property="og:url" content=" http://alexballera.com/" />
-    <meta property="og:title" content="AlexBallera | Web Developer" />
-    <meta property="og:description" content="Alex Ballera. Front-End Developer: Mobile Friendly, Responsive Web Design, JavaScript, HTML5, CSS3,..." />
+    <meta property="og:title" content="<?php bloginfo('name'); ?>" />
+    <meta property="og:description" content="<?php bloginfo('description'); ?>" />
     <meta property="og:type" content="article" />
     <meta property="og:image" content="https://raw.githubusercontent.com/alexballera/mi-portafolio/master/src/img/alex-ballera.jpg" />
-    <meta property="og:site_name" content="AlexBallera | Web Developer" />
-<!--     <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
-    <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
-    <meta property="article:section" content="Article Section" />
-    <meta property="article:tag" content="Article Tag" />
-    <meta property="fb:admins" content="Facebook numberic ID" /> -->
+    <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 
     <!-- Mobile Optimization -->
     <meta name="HandheldFriendly" content="True">
@@ -80,12 +75,12 @@
                   <a class="nav__mobile--logo" href="#">
                     <picture class="nav__mobile--logo--picture">
                       <source
-                      srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.svg,
-                      img/alex-ballera@2x.svg 2x">
+                      srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.svg,
+                      <?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera@2x.svg 2x">
                       <img
-                      src="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.jpg"
-                      srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.svg,
-                      img/alex-ballera@2x.svg 2x"
+                      src="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.jpg"
+                      srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.svg,
+                      <?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera@2x.svg 2x"
                       alt="Alex Ballera | Web Developer">
                       <figcaption>AlexBallera</figcaption>
                     </picture>
@@ -94,9 +89,9 @@
             </div>
             <nav class="nav__menu--navbar">
                   <ul id="navbarMenu" class="nav__menu--list">
-                      <li class="nav__menu--list--item"><a href="http://alexballera.com/#responsive">Responsive</a></li>
-                      <li class="nav__menu--list--item"><a href="http://alexballera.com/#projects">Proyectos</a></li>
-                      <li class="nav__menu--list--item"><a href="http://alexballera.com/#articles">Artículos</a></li>
+                      <li class="nav__menu--list--item"><a href="<?php bloginfo('url'); ?>/#responsive">Responsive</a></li>
+                      <li class="nav__menu--list--item"><a href="<?php bloginfo('url'); ?>/#projects">Proyectos</a></li>
+                      <li class="nav__menu--list--item"><a href="<?php bloginfo('url'); ?>/#articles">Artículos</a></li>
                       <li class="nav__menu--list--item"><a href="#openModal">Contáctame</a></li>
                   </ul>
             </nav>
@@ -106,12 +101,12 @@
         <header class="header">
               <picture class="header__picture">
                   <source
-                  srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.svg,
-                  http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera@2x.svg 2x">
+                  srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.svg,
+                  <?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera@2x.svg 2x">
                   <img
-                  src="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.jpg"
-                  srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.svg,
-                  http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera@2x.svg 2x"
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.jpg"
+                  srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.svg,
+                  <?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera@2x.svg 2x"
                   alt="Alex Ballera | Web Developer">
                   <figcaption class="header__picture--figcaption">
                       <span>Alex Ballera

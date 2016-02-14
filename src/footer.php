@@ -49,12 +49,12 @@
             <div>
               <picture class="nav__mobile--logo--picture">
                 <source
-                srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.svg,
-                http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera@2x.svg 2x">
+                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.svg,
+                <?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera@2x.svg 2x">
                 <img
-                src="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.jpg"
-                srcset="http://localhost/wp-content/themes/twentyfifteen-child/img/alex-ballera.svg,
-                img/alex-ballera@2x.svg 2x"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.jpg"
+                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.svg,
+                <?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera@2x.svg 2x"
                 alt="Alex Ballera | Web Developer">
                 <figcaption>AlexBallera</figcaption>
               </picture>
@@ -89,7 +89,7 @@
     <!-- Fin Modal Contact -->
     <!-- Scripts -->
 
-    <script src="http://localhost/wp-content/themes/twentyfifteen-child/js/main.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.min.js"></script>
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_footer(); ?>
   </body>

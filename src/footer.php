@@ -15,7 +15,7 @@
               <div class="footer__social">
                 <h3>
                 <address>
-                  <a href="mailto:alexballera@gmail.com">Alex Ballera | Entrepreneur & Marketer</a>
+                  <a href="mailto:alexballera@gmail.com"><?php bloginfo('name'); ?></a>
                 </address>
                 </h3>
                 <p>He emprendido negocios en los sectores tecnología, restaurant, automotriz y networking. Actualmente me desempeño como <em>Front End Developer</em> desarrollando sitios web optimizados para móviles con diseños responsivos. Conozco y utilizo, entre otros, los siguientes lenguajes, aplicaciones y frameworks:</p>

@@ -10,7 +10,6 @@
                                 <div class="content__container">
                                 <!-- Responsive Web Design -->
                                       <section class="content__responsive">
-                                            <!-- <h2 class="content__responsive--title">Responsive Web Design</h2> -->
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source

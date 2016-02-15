@@ -18,7 +18,8 @@
                   <a href="mailto:alexballera@gmail.com"><?php bloginfo('name'); ?></a>
                 </address>
                 </h3>
-                <p>He emprendido negocios en los sectores tecnología, restaurant, automotriz y networking. Actualmente me desempeño como <em>Front End Developer</em> desarrollando sitios web optimizados para móviles con diseños responsivos. Conozco y utilizo, entre otros, los siguientes lenguajes, aplicaciones y frameworks:</p>
+                <p><?php bloginfo('description'); ?></p>
+                <p class="footer__social--p">Conoce y utiliza, entre otros, los siguientes lenguajes y frameworks:</p>
                 <ul class="footer__contact--tech">
                   <li><i class="fa fa-html5"></i></li>
                   <li><i class="fa fa-css3"></i></li>

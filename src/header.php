@@ -72,7 +72,7 @@
     <!-- Barra de Navegación -->
         <nav id="header" class="nav">
             <div class="nav__mobile">
-                  <a class="nav__mobile--logo" href="#">
+                  <a class="nav__mobile--logo" href="<?php bloginfo('url'); ?>/#">
                     <picture class="nav__mobile--logo--picture">
                       <source
                       srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.svg,

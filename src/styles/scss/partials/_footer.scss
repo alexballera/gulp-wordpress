@@ -55,6 +55,9 @@ $item: 3;
     }
   }
   &__social{
+    & p:nth-child(2){
+      margin-bottom: 0.5rem;
+    }
     &--redes {
       & li{
         display: inline-block;

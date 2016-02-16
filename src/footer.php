@@ -56,10 +56,10 @@
                 src="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=150"
                 srcset="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=150,
                 http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300 2x"
-                alt="Alex Ballera | Web Developer">
-                <figcaption>AlexBallera</figcaption>
+                alt="<?php bloginfo('name'); ?>">
+                <figcaption><?php bloginfo('name'); ?></figcaption>
               </picture>
-              <p>Entrepreneur, Marketer & Front End Developer en tecnologías HTML5, CSS3, JavaScript & Ruby on Rails</p>
+              <p><?php bloginfo('description'); ?></p>
               <ul>
                 <li name="facebook"><a href="https://www.facebook.com/alexballera" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/AlexBallera" target="_blank"><i class="fa fa-twitter"></i></a></li>

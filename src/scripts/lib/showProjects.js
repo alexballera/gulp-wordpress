@@ -3,18 +3,6 @@ import $ from 'jquery'
 var showProjects = $(() => {
   // Variables Globales
   var $projectContainer = $('#content_projects').find('.content__articles--container')
-  // const mql = window.matchMedia('screen and (min-width: 680px')
-  // if (mql.matches) {
-  //     // Show Excerpt
-  //   $projectContainer.on('mouseenter', 'section.content__articles--post', (ev) => {
-  //     $('.content__articles--post--text').addClass('show').fadeIn('slow') // .css('display', 'table')
-  //   })
-
-  //     // Hide Excerpt
-  //   $projectContainer.on('mouseleave', 'section.content__articles--post', (ev) => {
-  //     $('.content__articles--post--text').removeClass('show') // .css('display', 'none')
-  //   })
-  // }
 
   // Optimizamos con renderShows
   function renderShows (projects) {

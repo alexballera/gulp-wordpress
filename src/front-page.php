@@ -13,12 +13,12 @@
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source
-                                                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/responsive.svg,
-                                                <?php echo get_stylesheet_directory_uri(); ?>/img/responsive@2x.svg 2x">
+                                                srcset="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/responsive-web.png?w=400,
+                                                http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/responsive-web.png?w=800 2x">
                                                 <img
-                                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/responsive.svg"
-                                                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/responsive.svg,
-                                                <?php echo get_stylesheet_directory_uri(); ?>/img/responsive@2x.svg 2x"
+                                                src="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/responsive-web.png?w=400"
+                                                srcset="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/responsive-web.png?w=400,
+                                                http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/responsive-web.png?w=800 2x"
                                                 alt="Responsive Web Design">
                                                 <figcaption>Responsive Web Design</figcaption>
                                               </picture>
@@ -33,12 +33,12 @@
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source
-                                                      srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly.svg,
-                                                      <?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly@2x.svg 2x">
+                                                      srcset="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/mobile-friendly.png?w=400,
+                                                      http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/mobile-friendly.png?w=800 2x">
                                                       <img
-                                                      src="<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly.svg"
-                                                      srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly.svg,
-                                                      http://<?php echo get_stylesheet_directory_uri(); ?>/img/mobile-friendly@2x.svg 2x"
+                                                      src="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/mobile-friendly.png?w=400"
+                                                      srcset="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/mobile-friendly.png?w=400,
+                                                      http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/mobile-friendly.png?w=800 2x"
                                                       alt="Mobile Friendly">
                                                       <figcaption>Mobile Optimization</figcaption>
                                               </picture>

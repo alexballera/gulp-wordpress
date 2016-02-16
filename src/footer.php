@@ -50,12 +50,12 @@
             <div>
               <picture class="nav__mobile--logo--picture">
                 <source
-                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.svg,
-                <?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera@2x.svg 2x">
+                srcset="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=150,
+                http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=3002x">
                 <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.jpg"
-                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera.svg,
-                <?php echo get_stylesheet_directory_uri(); ?>/img/alex-ballera@2x.svg 2x"
+                src="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=150"
+                srcset="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=150,
+                http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300 2x"
                 alt="Alex Ballera | Web Developer">
                 <figcaption>AlexBallera</figcaption>
               </picture>

@@ -91,7 +91,6 @@ footer.entry-footer{
 }
 nav.post-navigation{
   & .nav-links{
-
   }
   font-family: $font-awesome;
   .nav-previous a span,
@@ -99,3 +98,9 @@ nav.post-navigation{
     font-family: $font-awesome;
   }
 }
+.comments-area{
+  p.must-log-in a{
+    color: $black;
+  }
+}
+

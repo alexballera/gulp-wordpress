@@ -35,6 +35,7 @@
                   <li><a href="https://www.linkedin.com/in/alexballera" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                   <li><a href="https://plus.google.com/u/0/+AlexBallera/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                   <li><a href="https://github.com/alexballera" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                  <li><a href="http://alexballera.com/feed/" target="_blank"><i class="fa fa-rss"></i></a></li>
                   <li><a href="mailto:alexballera@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
                 </ul>
                 <a href="#openModal">

@@ -84,32 +84,3 @@
             </nav>
         </nav>
     <!-- Fin de Barra de Navegación -->
-        <!-- Header -->
-        <header class="header">
-              <picture class="header__picture">
-                  <source
-                  srcset="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=451,
-                  http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera@2x.jpg?w=903 2x">
-                  <img
-                  src="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=451"
-                  srcset="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=451,
-                  http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera@2x.jpg?w=903 2x"
-                  alt="Alex Ballera | Web Developer">
-                  <figcaption class="header__picture--figcaption">
-                      <span>Alex Ballera
-                      <span>Front End Developer</span></span>
-                      <span>Mobile Optimization & Responsive Web Design</span>
-                  </figcaption>
-              </picture>
-              <section class="header__languages">
-                    <ul class="header__languages--tech">
-                          <li><i class="fa fa-html5"></i></li>
-                          <li><i class="fa fa-css3"></i></li>
-                          <li><i class="icon-javascript-alt"></i></li>
-                          <li><i class="icon-ruby-on-rails"></i></li>
-                          <li><i class="fa fa-wordpress"></i></li>
-                          <li><i class="fa fa-git"></i></li>
-                    </ul>
-              </section>
-        </header>
-    <!-- Fin de Header -->

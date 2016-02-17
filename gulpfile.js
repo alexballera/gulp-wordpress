@@ -55,7 +55,7 @@ const globs = {
     main: './src/styles/fonts/**',
     watch: './src/styles/fonts/**/*.*',
     src: './src/styles/fonts',
-    dist: './dist/css/fonts'
+    dist: './dist/css'
   }
 }
 
@@ -141,8 +141,10 @@ gulp.task('clean', (cb) => {
 
 // Copy
 gulp.task('copy', () => {
-  gulp.src(globs.fonts.src + '/**/*.*')
-    .pipe(gulp.dest(globs.fonts.dist))
+  // gulp.src(globs.fonts.src + '/**/*.*')
+  //   .pipe(gulp.dest(globs.fonts.dist))
+  gulp.src(globs.fonts.src + '/fonts-mfizz/**')
+    .pipe(gulp.dest(globs.fonts.dist + '/fonts-mfizz'))
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.dist))
 })

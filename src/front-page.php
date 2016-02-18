@@ -85,21 +85,23 @@
                                             </div>
                                             <form action="//alexballera.us8.list-manage.com/subscribe/post?u=8d7312e4347b5791968e24e78&amp;id=d7ed361251" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                                   <div id="mc_embed_signup_scroll" class="form__email">
-                                                    <div class="indicates-required" style="display:none"><span class="asterisk">*</span> Requerido</div>
                                                       <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="*Tu nombre aquí...">
                                                       <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="*Tu email aquí...">
-                                                      <div id="mce-responses" class="clear">
+                                                      <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2" placeholder="Deja tu mensaje aquí...">
+                                                    <div id="mce-responses" class="clear">
                                                         <div class="response" id="mce-error-response" style="display:none"></div>
                                                         <div class="response" id="mce-success-response" style="display:none"></div>
-                                                      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8d7312e4347b5791968e24e78_d7ed361251" tabindex="-1" value=""></div>
-                                                        <div class="clear form__email--button">
+                                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                            <input type="text" name="b_8d7312e4347b5791968e24e78_d7ed361251" tabindex="-1" value="">
+                                                    </div>
+                                                    <div class="clear form__email--button">
                                                         <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><i class="fa fa-envelope-o"></i> Contáctame</button>
-                                                        </div>
+                                                    </div>
                                                   </div>
                                             </form>
                                       </div>
-                                <!--End MailChimp Signup Form-->
+                                <!--End MailChimp Signup Form -->
                                 </div>
                           </main>
                     <!-- Fin de Servicios: Responsive Web Design & Mobile Friendly -->

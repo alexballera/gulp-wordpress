@@ -73,16 +73,17 @@
                         <div class="indicates-required" style="display:none"><span class="asterisk">*</span> Requerido</div>
                           <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="*Tu nombre aquí...">
                           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="*Tu email aquí...">
+                          <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2" placeholder="Deja tu mensaje aquí...">
                           <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
-                          </div>    
+                          </div>
                           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8d7312e4347b5791968e24e78_d7ed361251" tabindex="-1" value=""></div>
                             <a href="#close" title="Cerrar" class="close">X</a>
                             <a href="#close" title="Cerrar" class="close__boton">
                             <div class="clear form__email--button">
-                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><i class="fa fa-envelope-o"></i> Contáctame</button>
+                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><a href="#close"><i class="fa fa-envelope-o"></i> Contáctame</a></button>
                             </div>
                       </div>
                 </form>

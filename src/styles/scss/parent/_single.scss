@@ -61,11 +61,11 @@ header.entry-header{
       font-weight: bold;
       font-family: $font-awesome;
     }
-    & p{
+    & p.author-bio{
       font-size: 1rem;
-    }
-    & a.author-link{
-      color: $black;
+      & a.author-link{
+        color: $black;
+      }
     }
   }
 }

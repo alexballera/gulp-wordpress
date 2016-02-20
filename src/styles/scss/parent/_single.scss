@@ -107,9 +107,11 @@ nav.post-navigation{
     font-family: $font-awesome;
   }
 }
-.comments-area{
-  // p.must-log-in a{
-  //   color: $black;
-  // }
+/*
+* Disqus
+*/
+#layout{
+  width: 80%;
+  margin: 0 auto;
 }
 

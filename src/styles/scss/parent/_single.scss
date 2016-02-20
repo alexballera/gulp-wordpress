@@ -41,7 +41,6 @@ header.entry-header{
     text-align: justify;
     margin-top: 1rem;
     & a{
-      // color: $black;
       font-weight: bolder;
       text-decoration: none;
     }
@@ -60,18 +59,6 @@ header.entry-header{
       font-size: 1rem;
       font-weight: bold;
       font-family: $font-awesome;
-    }
-    // & a.author-link{
-    //   color: $black;
-    // }
-    // & a{
-    //   color: $black;
-    // }
-    & p.author-bio{
-      font-size: 1rem;
-      // & a.author-link{
-      //   color: $black;
-      // }
     }
   }
 }
@@ -110,8 +97,8 @@ nav.post-navigation{
 /*
 * Disqus
 */
-#layout{
-  width: 80%;
-  margin: 0 auto;
+div#layout{
+  width: 80% !important;
+  margin: 0 auto !important;
 }
 

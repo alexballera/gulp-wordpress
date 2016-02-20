@@ -4,8 +4,7 @@ body{
   font-family: $font-awesome;
 }
 a{
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
 }
 h1{
   font-size: 1.8rem;

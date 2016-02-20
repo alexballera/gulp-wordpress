@@ -68,10 +68,11 @@ header.entry-header{
     //   color: $black;
     // }
     & p.author-bio{
-      font-size: 1rem;
-      // & a.author-link{
-      //   color: $black;
-      // }
+      font-size: 0.9rem;
+      & a.author-link{
+        // color: $black;
+        font-size: 0.9rem;
+      }
     }
   }
 }
@@ -110,7 +111,7 @@ nav.post-navigation{
 /*
 * Disqus
 */
-div#layout,
+// div#layout,
 div#disqus_thread{
   width: 85%;
   margin: 1rem auto;

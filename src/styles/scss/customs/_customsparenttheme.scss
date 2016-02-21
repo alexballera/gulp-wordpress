@@ -98,8 +98,8 @@ footer.entry-footer{
     &.cat-links::before,
     &.edit-link::before,
     &.tags-links::before{
-      font-size: 1.5rem;
-      line-height: 1.5rem;
+      font-size: 1rem;
+      line-height: 1rem;
     }
   }
 }
@@ -110,7 +110,7 @@ footer.entry-footer{
     font-family: $font-awesome;
   }
   & form p label{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 nav.post-navigation{
@@ -149,13 +149,15 @@ div#disqus_thread{
 * MailChimp
 */
 .yikes-mailchimp-container {
+  & form.yikes-easy-mc-form label input{
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: $font-awesome;
+  }
   & span.edit-link{
     & a.post-edit-link{
       color: $black;
       font-size: 1rem;
     }
   }
-  // & form label input{
-  //   padding: 0;
-  // }
 }

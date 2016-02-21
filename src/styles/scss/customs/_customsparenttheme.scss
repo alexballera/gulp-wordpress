@@ -150,8 +150,12 @@ div#disqus_thread{
 */
 .yikes-mailchimp-container {
   & span.edit-link{
-    & a.post-edit-lonk{
+    & a.post-edit-link{
       color: $black;
+      font-size: 1rem;
     }
   }
+  // & form label input{
+  //   padding: 0;
+  // }
 }

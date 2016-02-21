@@ -122,7 +122,7 @@
                           <article id="content_articles" class="content__articles content__articles--background">
                                 <div class="container">
                                       <div id="articles"></div>
-                                      <h2 class="content__articles--title title">¿Qu&#233 quieres aprender hoy?</h2>
+                                      <h2 class="content__articles--title title">&#191Qu&#233 quieres aprender hoy?</h2>
                                       <!-- Inicio de los Art&#237culos -->
                                       <div class="content__articles--container">
                                             <div class="loader">Loading...</div>
@@ -135,7 +135,7 @@
                       <div class="container form__container--purple">
                           <div id="mc_embed_signup" class="form content__responsive--form">
                                 <div class="form__content form__content--purple">
-                                  <h2>¿Te gusta lo que lees? Subscr&#237bete!</h2> 
+                                  <h2>&#191Te gusta lo que lees? Subscr&#237bete!</h2> 
                                   <p class="form__content--white">Si quieres recibir en las noticias que se cuecen en este blog, s&#243lo tienes que dejar tu nombre y direcci&#243n de correo electr&#243nico <em>aqu&#237</em>.</p>
                                 </div>
                                 <form action="//alexballera.us8.list-manage.com/subscribe/post?u=8d7312e4347b5791968e24e78&amp;id=d7ed361251" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

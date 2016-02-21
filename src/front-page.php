@@ -136,7 +136,7 @@
                           <div id="mc_embed_signup" class="form content__responsive--form">
                                 <div class="form__content form__content--purple">
                                   <h2>&#191Te gusta lo que lees? Subscr&#237bete!</h2> 
-                                  <p class="form__content--white">Si quieres recibir en las noticias que se cuecen en este blog, s&#243lo tienes que dejar tu nombre y direcci&#243n de correo electr&#243nico <em>aqu&#237</em>.</p>
+                                  <p class="form__content--white">Si quieres recibir las noticias que se cuecen en este blog, s&#243lo tienes que dejar tu nombre y direcci&#243n de correo electr&#243nico <em>aqu&#237</em>.</p>
                                 </div>
                                 <form action="//alexballera.us8.list-manage.com/subscribe/post?u=8d7312e4347b5791968e24e78&amp;id=d7ed361251" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                       <div id="mc_embed_signup_scroll" class="form__email form__purple">

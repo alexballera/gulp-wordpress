@@ -34,8 +34,8 @@
                     <!-- Servicios: Responsive Web Design & Mobile Friendly -->
                           <main class="main">
                                 <div id="responsive"></div>
-                                <h1 class="content__title">¿Tu sitio web responde a diferentes tama&#241os de navegador?
-                                <br><span>¿Est&#225 optimizado para dispositivos m&#243viles?</span></h1>
+                                <h1 class="content__title">&#191Tu sitio web responde a diferentes tama&#241os de navegador?
+                                <br><span>&#191Est&#225 optimizado para dispositivos m&#243viles?</span></h1>
                                 <div class="content__container">
                                 <!-- Responsive Web Design -->
                                       <section class="content__responsive">

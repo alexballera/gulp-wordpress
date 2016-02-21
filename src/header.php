@@ -36,6 +36,8 @@
       <link rel="apple-touch-icon" sizes="72x72" href="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad.png?fit=72%2C72" />
       <link rel="apple-touch-icon" sizes="114x114" href="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone-retina.png?fit=114%2C114" />
       <link rel="apple-touch-icon" sizes="152x152" href="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad-retina.png?w=152">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
 
     <!--[if (gte IE 6)&(lte IE 8)]>
@@ -51,15 +53,15 @@
   <body>
     <!--[if lt  IE  8]>
     <p  class="browsehappy">
-      Estás usando  un  navegador <strong>desactualizado</strong>.
+      Est&#225s usando  un  navegador <strong>desactualizado</strong>.
       Por favor <a  href="http://browsehappy.com/">actualiza  tu  navegador</a>
       Para  mejorar la  experiencia..
     </p>
     <![endif]-->
-    <!-- Barra de Navegación -->
+    <!-- Barra de Navegaci&#243n -->
         <nav id="header" class="nav">
             <div class="nav__mobile">
-                  <a class="nav__mobile--logo" href="<?php bloginfo('url'); ?>/#">
+                  <a class="nav__mobile--logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <picture class="nav__mobile--logo--picture">
                       <source
                       srcset="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=451,
@@ -76,11 +78,11 @@
             </div>
             <nav class="nav__menu--navbar">
                   <ul id="navbarMenu" class="nav__menu--list">
-                      <li class="nav__menu--list--item"><a href="<?php bloginfo('url'); ?>/#responsive">Responsive</a></li>
-                      <li class="nav__menu--list--item"><a href="<?php bloginfo('url'); ?>/#projects">Proyectos</a></li>
-                      <li class="nav__menu--list--item"><a href="<?php bloginfo('url'); ?>/#articles">Artículos</a></li>
-                      <li class="nav__menu--list--item"><a href="#openModal">Contáctame</a></li>
+                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#responsive' ) ); ?>">Responsive</a></li>
+                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#projects' ) ); ?>">Proyectos</a></li>
+                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#articles' ) ); ?>">Art&#237culos</a></li>
+                      <li class="nav__menu--list--item"><a href="#openModal">Cont&#225ctame</a></li>
                   </ul>
             </nav>
         </nav>
-    <!-- Fin de Barra de Navegación -->
+    <!-- Fin de Barra de Navegaci&#243n -->

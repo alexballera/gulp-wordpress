@@ -2,12 +2,12 @@
         <footer class="footer">
             <div id="footer"></div>
             <div id="showCategories" class="footer__content">
-                <h3>Categorías</h3>
+                <h3>Categor&#237as</h3>
                 <ul class="ul-categories">
                 </ul>
             </div>
             <div id="lastArticles" class="footer__content footer__articles">
-                <h3>Últimos artículos</h3>
+                <h3>&#218ltimos art&#237culos</h3>
                 <ul class="ul-articles">
                 </ul>
             </div>
@@ -28,7 +28,7 @@
                   <li><i class="fa fa-wordpress"></i></li>
                   <li><i class="fa fa-git"></i></li>
                 </ul>
-                <h3>Sígueme y contáctame</h3>
+                <h3>S&#237gueme y cont&#225ctame</h3>
                 <ul class="footer__social--redes">
                   <li name="facebook"><a href="https://www.facebook.com/alexballera" target="_blank"><i class="fa fa-facebook"></i></a></li>
                   <li><a href="https://twitter.com/AlexBallera" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -39,7 +39,7 @@
                   <li><a href="mailto:alexballera@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
                 </ul>
                 <a href="#openModal">
-                  <button class="informacion__boton" type="button"> <i class="fa fa-envelope-o"></i> Contáctame
+                  <button class="informacion__boton" type="button"> <i class="fa fa-envelope-o"></i> Cont&#225ctame
                   </button>
                 </a>
               </div>
@@ -62,18 +62,18 @@
               </picture>
               <p><?php bloginfo('description'); ?></p>
               <ul>
-                <li name="facebook"><a href="https://www.facebook.com/alexballera" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/AlexBallera" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/alexballera" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://plus.google.com/u/0/+AlexBallera/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="https://github.com/alexballera" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                <li name="facebook"><a href="<?php esc_url('https://www.facebook.com/alexballera'); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="<?php esc_url('https://twitter.com/AlexBallera'); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="<?php esc_url('https://www.linkedin.com/in/alexballera'); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="<?php esc_url('https://plus.google.com/u/0/+AlexBallera/posts'); ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="<?php esc_url('https://github.com/alexballera'); ?>" target="_blank"><i class="fa fa-github-alt"></i></a></li>
               </ul>
               <form action="//alexballera.us8.list-manage.com/subscribe/post?u=8d7312e4347b5791968e24e78&amp;id=d7ed361251" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                       <div id="mc_embed_signup_scroll" class="form__email form__modal">
                         <div class="indicates-required" style="display:none"><span class="asterisk">*</span> Requerido</div>
-                          <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="*Tu nombre aquí...">
-                          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="*Tu email aquí...">
-                          <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2" placeholder="Deja tu mensaje aquí...">
+                          <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="*Tu nombre aqu&#237...">
+                          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="*Tu email aqu&#237...">
+                          <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2" placeholder="Deja tu mensaje aqu&#237...">
                           <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
@@ -83,7 +83,7 @@
                             <a href="#close" title="Cerrar" class="close">X</a>
                             <a href="#close" title="Cerrar" class="close__boton">
                             <div class="clear form__email--button">
-                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><a href="#close"><i class="fa fa-envelope-o"></i> Contáctame</a></button>
+                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><a href="#close"><i class="fa fa-envelope-o"></i> Cont&#225ctame</a></button>
                             </div>
                       </div>
                 </form>

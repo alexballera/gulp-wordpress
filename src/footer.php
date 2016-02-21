@@ -25,7 +25,7 @@
                   <li><i class="fa fa-css3"></i></li>
                   <li><i class="icon-javascript-alt"></i></li>
                   <li><i class="icon-ruby-on-rails"></i></li>
-                  <li><i class="fa fa-wordpress"></i></li>
+                  <li><i class="icon-wordpress"></i></li>
                   <li><i class="fa fa-git"></i></li>
                 </ul>
                 <h3>S&#237gueme y cont&#225ctame</h3>

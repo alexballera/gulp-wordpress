@@ -94,7 +94,7 @@ gulp.task('build:scripts', () => {
     .bundle()
     .pipe(source('main.js'))
     .pipe(buffer())
-    .pipe(gulp.dest(globs.scripts.dist))
+    // .pipe(gulp.dest(globs.scripts.dist))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(globs.scripts.dist))

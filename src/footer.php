@@ -30,13 +30,11 @@
                 </ul>
                 <h3>S&#237gueme y cont&#225ctame</h3>
                 <ul class="footer__social--redes">
-                  <li name="facebook"><a href="https://www.facebook.com/alexballera" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/AlexBallera" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/alexballera" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://plus.google.com/u/0/+AlexBallera/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a href="https://github.com/alexballera" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-                  <li><a href="http://alexballera.com/feed/" target="_blank"><i class="fa fa-rss"></i></a></li>
-                  <li><a href="mailto:alexballera@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                  <li name="facebook"><a href="<?php echo esc_url( __( 'https://www.facebook.com/alexballera', 'facebook')); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="<?php echo esc_url( __( 'https://twitter.com/AlexBallera', 'twitter')); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="<?php echo esc_url( __( 'https://www.linkedin.com/in/alexballera', 'linkedin')); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="<?php echo esc_url( __( 'https://plus.google.com/u/0/+AlexBallera/posts', 'google')); ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="<?php echo esc_url( __('https://github.com/alexballera', 'github')); ?>" target="_blank"><i class="fa fa-github-alt"></i></a></li>
                 </ul>
                 <a href="#openModal">
                   <button class="informacion__boton" type="button"> <i class="fa fa-envelope-o"></i> Cont&#225ctame
@@ -62,11 +60,11 @@
               </picture>
               <p><?php bloginfo('description'); ?></p>
               <ul>
-                <li name="facebook"><a href="<?php echo esc_url('https://www.facebook.com/alexballera'); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="<?php echo esc_url('https://twitter.com/AlexBallera'); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="<?php echo esc_url('https://www.linkedin.com/in/alexballera'); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="<?php echo esc_url('https://plus.google.com/u/0/+AlexBallera/posts'); ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="<?php echo esc_url('https://github.com/alexballera'); ?>" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                <li name="facebook"><a href="<?php echo esc_url( __( 'https://www.facebook.com/alexballera', 'facebook')); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="<?php echo esc_url( __( 'https://twitter.com/AlexBallera', 'twitter')); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="<?php echo esc_url( __( 'https://www.linkedin.com/in/alexballera', 'linkedin')); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="<?php echo esc_url( __( 'https://plus.google.com/u/0/+AlexBallera/posts', 'google')); ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="<?php echo esc_url( __('https://github.com/alexballera', 'github')); ?>" target="_blank"><i class="fa fa-github-alt"></i></a></li>
               </ul>
               <form action="//alexballera.us8.list-manage.com/subscribe/post?u=8d7312e4347b5791968e24e78&amp;id=d7ed361251" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                       <div id="mc_embed_signup_scroll" class="form__email form__modal">

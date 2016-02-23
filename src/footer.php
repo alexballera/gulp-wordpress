@@ -90,7 +90,9 @@
         </div>
     <!-- Fin Modal Contact -->
     <!-- Scripts -->
-
+    <!-- Start of Leadin Embed -->
+      <script type="text/javascript" src="//js.leadin.com/js/v1/2056572.js" id="LeadinEmbed-2056572" crossorigin="use-credentials" async defer></script>
+    <!-- End of Leadin Embed -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.min.js"></script>
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_footer(); ?>

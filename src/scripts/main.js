@@ -35,4 +35,3 @@ import showCategories from './lib/showCategories'
     loadJS(urlJs)
   }
 })()
-

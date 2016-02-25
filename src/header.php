@@ -1,42 +1,10 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/Article" <?php language_attributes(); ?> xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+<html itemscope itemtype="http://schema.org/Article" <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-    <!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 1.7 -->
-    <meta name="author" content="Alex Ballera"/>
-    <meta name="description" content="Ha emprendido negocios en diferentes sectores. Actualmente, crea sitios responsivos optimizados para móviles."/>
-    <meta property="fb:app_id" content="586663831475504"/>
-    <meta property="fb:admins" content="721354641"/>
-    <meta property="og:locale" content="es_ES"/>
-    <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
-    <meta property="og:title" content="<?php bloginfo('name'); ?>"/>
-    <meta property="og:url" content="http://alexballera.com"/>
-    <meta property="og:type" content="blog"/>
-    <meta property="og:description" content="<?php bloginfo('description'); ?>"/>
-    <meta property="og:image" content="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=400"/>
-    <meta property="og:image:width" content="400"/>
-    <meta property="og:image:height" content="254"/>
-    <meta property="article:publisher" content="https://www.facebook.com/AlexBallera.Dev"/>
-    <meta property="article:author" content="https://www.facebook.com/alexballera"/>
-    <meta itemprop="name" content="<?php bloginfo('name'); ?>"/>
-    <meta itemprop="headline" content="Front End Developer - Responsive Design - Mobile Optimization" />
-    <meta itemprop="description" content="<?php bloginfo('description'); ?>"/>
-    <meta itemprop="image" content="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=400"/>
-    <meta name="twitter:title" content="<?php bloginfo('name'); ?>"/>
-    <meta name="twitter:url" content="http://alexballera.com"/>
-    <meta name="twitter:site" content="@alexballera"/>
-    <meta name="twitter:creator" content="@alexballera"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="<?php bloginfo('description'); ?>"/>
-    <meta name="twitter:image:src" content="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=400"/>
-    <link rel="canonical" href="http://alexballera.com"/>
-    <link rel="publisher" href="https://plus.google.com/100946240394478170627"/>
-    <link rel="author" href="https://plus.google.com/101028757520419920996"/>
-    <!-- END - Facebook Open Graph, Google+ and Twitter Card Tags -->
 
     <!-- Mobile Optimization -->
     <meta name="HandheldFriendly" content="True">

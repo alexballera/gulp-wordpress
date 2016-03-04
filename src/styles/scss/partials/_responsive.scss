@@ -47,6 +47,31 @@
       & em{
         font-weight: 700;
       }
+      & p{
+        color: grey;
+        width: 75%;
+        margin: 0 auto;
+        letter-spacing: 1.2px;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+      }
+      & a {
+        display: block;
+        margin: 1rem auto 0.5rem auto;
+        width: 250px;
+        border-radius: 5px;
+        padding: 1rem;
+        color: $white;
+        background-color: $orange;
+        font-size: 1.40rem;
+        @include respond-to(mm) {
+          font-size: 1.75rem;
+        }
+        &:hover{
+          background-color: $purple;
+          cursor: pointer;
+        }
+    }
     }
     &--title{
       padding: 1em 0;
@@ -54,6 +79,7 @@
     }
     &--responsive{
       padding: 1em;
+      padding-top: 2rem;
       transition: all 1.2s ease;
       @include respond-to(md) {
         transition: all 1.2s ease;
@@ -63,7 +89,7 @@
       &--text{
         color: grey;
         letter-spacing: 1.2px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 1.2rem;
         width: 80%;
         margin: 0 auto;
@@ -72,21 +98,6 @@
         }
         &::first-letter {
           font-size: 150%;
-        }
-      }
-      &--picture{
-        width: 100%;
-        & img{
-          width: 70%;
-          padding: 1rem;
-          @include respond-to(md) {
-            width: 270px;
-            height: 160px;
-            vertical-align: middle;
-          }
-          // @include respond-to(xl) {
-          //   width: 632px;
-          // }
         }
       }
       &--text{
@@ -98,4 +109,8 @@
       }
     }
   }
+}
+.fa.fa-desktop,
+.icon-mobile-device {
+  font-size: 10rem;
 }

@@ -2,13 +2,18 @@
         <footer class="footer">
             <div id="footer"></div>
             <div id="showCategories" class="footer__content">
-                <h3>Categor&#237as</h3>
+                <h3>Temas</h3>
                 <ul class="ul-categories">
                 </ul>
             </div>
             <div id="lastArticles" class="footer__content footer__articles">
-                <h3>&#218ltimos art&#237culos</h3>
+                <h3>Últimos art&#237culos</h3>
                 <ul class="ul-articles">
+                  <li class="hide">
+                    <a href="" target="_blank">
+                      <i class="fa fa-file-text"></i>
+                    </a>
+                  </li>
                 </ul>
             </div>
             <div class="footer__contact">
@@ -25,7 +30,7 @@
                   <li><i class="fa fa-css3"></i></li>
                   <li><i class="icon-javascript-alt"></i></li>
                   <li><i class="icon-ruby-on-rails"></i></li>
-                  <li><i class="icon-wordpress"></i></li>
+                  <li><i class="fa fa-wordpress"></i></li>
                   <li><i class="fa fa-git"></i></li>
                 </ul>
                 <h3>S&#237gueme y cont&#225ctame</h3>
@@ -50,12 +55,12 @@
             <div>
               <picture class="nav__mobile--logo--picture">
                 <source
-                srcset="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=150,
-                http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=3002x">
+                srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
+                http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x">
                 <img
-                src="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=150"
-                srcset="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=150,
-                http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300 2x"
+                src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50"
+                srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
+                http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x"
                 alt="<?php bloginfo('name'); ?>">
                 <figcaption><?php bloginfo('name'); ?></figcaption>
               </picture>
@@ -90,9 +95,6 @@
         </div>
     <!-- Fin Modal Contact -->
     <!-- Scripts -->
-    <!-- Start of Leadin Embed -->
-      <script type="text/javascript" src="//js.leadin.com/js/v1/2056572.js" id="LeadinEmbed-2056572" crossorigin="use-credentials" async defer></script>
-    <!-- End of Leadin Embed -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.min.js"></script>
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_footer(); ?>

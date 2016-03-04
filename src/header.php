@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/Article" <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +11,48 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!-- img Icon -->
-      <link rel="shortcut icon" href="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone.png?fit=57%2C57" />
-      <link rel="apple-touch-icon" href="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone.png?fit=57%2C57" />
-      <link rel="apple-touch-icon" sizes="72x72" href="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad.png?fit=72%2C72" />
-      <link rel="apple-touch-icon" sizes="114x114" href="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone-retina.png?fit=114%2C114" />
-      <link rel="apple-touch-icon" sizes="152x152" href="http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad-retina.png?w=152">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+    <!-- Images Icon -->
+    <link rel="shortcut icon" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone.png?w=57" />
+    <link rel="apple-touch-icon" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone.png?w=57" />
+    <link rel="apple-touch-icon" sizes="72x72" href="http://i0.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad.png?w=72" />
+    <link rel="apple-touch-icon" sizes="114x114" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone-retina.png?w=114" />
+    <link rel="apple-touch-icon" sizes="152x152" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad-retina.png?w=152">
+
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Article",
+          "mainEntityOfPage":{
+            "@type":"WebPage",
+            "@id":"http://alexballera.com"
+          },
+          "headline": "Front End Developer, Responsive Design, Mobile Optimization",
+          "image": {
+            "@type": "ImageObject",
+            "url": "http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg",
+            "height": 800,
+            "width": 800
+          },
+          "datePublished": "2015-02-05T08:00:00+08:00",
+          "dateModified": "2015-02-05T09:20:00+08:00",
+          "author": {
+            "@type": "Person",
+            "name": "Alex Ballera"
+          },
+           "publisher": {
+            "@type": "Organization",
+            "name": "Alex Ballera",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg",
+              "width": 600,
+              "height": 60
+            }
+          },
+          "description": "Ha emprendido negocios en diferentes sectores. Actualmente, crea sitios responsivos optimizados para m&#243viles."
+        }
+    </script>
 
     <!--[if (gte IE 6)&(lte IE 8)]>
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.min.js"></script>
@@ -42,17 +75,17 @@
     <!-- Barra de Navegaci&#243n -->
         <nav id="header" class="nav">
             <div class="nav__mobile">
-                  <a class="nav__mobile--logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                  <a class="nav__mobile--logo" href="#">
                     <picture class="nav__mobile--logo--picture">
                       <source
-                      srcset="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=451,
-                      http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera@2x.jpg?w=903 2x">
-                      <img
-                      src="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=451"
-                      srcset="http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=451,
-                      http://i2.wp.com/alexballera.com/wp-content/uploads/2016/02/alex-ballera@2x.jpg?w=903 2x"
-                      alt="Alex Ballera | Web Developer">
-                      <figcaption>AlexBallera</figcaption>
+                        srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
+                        http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x">
+                        <img
+                        src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50"
+                        srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
+                        http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x"
+                        alt="Alex Ballera">
+                        <figcaption>Alex Ballera | Front End Developer</figcaption>
                     </picture>
                   </a>
                   <button id="btnMenu" class="nav__mobile--btn inactive active"><i id="btnButton" class="fa fa-bars"></i></button>

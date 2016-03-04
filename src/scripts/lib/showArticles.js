@@ -11,17 +11,18 @@ var showArticles = $(() => {
       var projectTemplate = template
       .replace(':title:', project.title)
       .replace(':url:', project.short_URL)
-      .replace(':link:', project.short_URL)
-      .replace(':link content:', project.short_URL)
       .replace(':image:', project.featured_image)
       .replace(':image alt:', project.title + ' Image')
       .replace(':author:', project.author.name)
-      .replace(':avatar:', project.author.avatar_URL)
-      .replace(':avatar alt:', project.author.name + ' Logo')
-      .replace(':profile:', project.author.profile_URL)
-      .replace(':profile img:', project.author.profile_URL)
-      .replace(':category:', Object.keys(project.categories)[0])
+      .replace(':year:', project.date.split('-')[0])
+      .replace(':month:', project.date.split('-')[1])
+      .replace(':day1:', project.date.split('-')[2].split('')[0])
+      .replace(':day2:', project.date.split('-')[2].split('')[1])
+      .replace(':category1:', Object.keys(project.categories)[0])
       .replace(':category2:', Object.keys(project.categories)[1])
+      .replace(':tag1:', Object.keys(project.tags)[0])
+      .replace(':tag2:', Object.keys(project.tags)[1])
+      .replace(':tag3:', Object.keys(project.tags)[2])
 
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
@@ -29,27 +30,18 @@ var showArticles = $(() => {
     })
   }
   // Request
-  var template = `<section class="content__articles--post" style="display: flex; align-items: center;">
+  var template = `<a class="content__articles--post" href=":url:" target="_blank">
+    <section>
         <picture class="content__articles--post--picture">
-          <a href=":url:" target="_blank" class="content__articles--post--link">
             <img src=":image:" alt=":image alt:">
-          </a>
+            <figcaption>:figcaption:</figcaption>
         </picture>
-        <div class="content__articles--post--title">
-          <a href=":link:" target="_blank"><h3>:title:</h3></a>
-          <picture class="content__articles--post--avatar" style="display:flex;align-items:center;">
-            <a href=":profile img:" target="_blank">
-            <img src=":avatar:" alt=":avatar alt:"
-              style="width:17.5px;height:17.5px;margin:8px;">
-            </a>
-            <a href=":profile:" target="_blank" class="content__articles--post--link">
-              <figcaption style="display:block;outline:none;font-size:70%;color:grey;"><span style="font-weight:700;">:author:</span> | <i class="fa fa-folder-open"></i> :category:, :category2:</figcaption>
-            </a>
-          </picture>
-        </div>
-  </section>`
+        <h3>:title:</h3>
+        <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:/:month:/:year:</i> <i class="fa fa-folder-open"> :category1:, :category2:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
+    </section>
+  </a>`
 
-  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?number=6&category=sin-categoria,responsive,html,css,wordpress,rails,servidor,git,javascript')
+  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts/?number=6&category=sin-categoria,responsive,html,css,wordpress,rails,servidor,git,javascript')
       .then((articles) => {
         $projectContainer.find('.loader').remove()
         localStorage.articles = JSON.stringify(articles)

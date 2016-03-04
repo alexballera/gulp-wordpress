@@ -7,7 +7,7 @@
                 </ul>
             </div>
             <div id="lastArticles" class="footer__content footer__articles">
-                <h3>Últimos art&#237culos</h3>
+                <h3>&#218ltimos art&#237culos</h3>
                 <ul class="ul-articles">
                   <li class="hide">
                     <a href="" target="_blank">

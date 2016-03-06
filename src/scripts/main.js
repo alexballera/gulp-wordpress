@@ -29,9 +29,7 @@ import showCategories from './lib/showCategories'
     btnButton.addEventListener('click', changeButton)
 
   // Load JS
-    var urlJs = [
-      '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56d613c8f5bb6dba'
-    ]
+    var urlJs = ['//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56da634ec645fbfa']
     loadJS(urlJs)
   }
 })()

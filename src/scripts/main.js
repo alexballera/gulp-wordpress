@@ -10,6 +10,7 @@ import showProjects from './lib/showProjects'
 import showArticles from './lib/showArticles'
 import lastsArticles from './lib/lastsArticles'
 import showCategories from './lib/showCategories'
+import showTags from './lib/showTags'
 
 (() => {
   'use strict'

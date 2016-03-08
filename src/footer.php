@@ -98,6 +98,13 @@
             </div>
         </div>
     <!-- Fin Modal Contact -->
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script>
+            window.cookieconsent_options = {"message":"Este sitio web utiliza cookies para asegurarse de que obtenga la mejor experiencia en nuestro sitio web","dismiss":"Aceptar","learnMore":"Más información","link":"http://web.alexballera.com/politica-de-cookies","theme":"dark-bottom"};
+        </script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+        <!-- End Cookie Consent plugin -->
     <!-- Scripts -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.min.js"></script>
     <?php wp_enqueue_script("jquery"); ?>

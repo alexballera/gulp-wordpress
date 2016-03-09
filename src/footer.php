@@ -54,6 +54,12 @@
             </div>
         </footer>
     <!-- Fin de Footer -->
+    <section class="legal">
+      <ul>
+        <li><a href="http://alexballera.com/legal.html" target="_blank" title="Términos Legales">Términos Legales</a></li>
+        <li><a href="http://alexballera.com/cookies.html" target="_blank" title="Política de Cookies">Política de Cookies</a></li>
+      </ul>
+    </section>
     <!-- Modal Contact -->
         <div id="openModal" class="modalDialog">
             <div>

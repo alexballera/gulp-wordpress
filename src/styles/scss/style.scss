@@ -12,20 +12,20 @@
  Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
  Text Domain: twentyfifteen-child
 */
-@import './vendors/normalize'; //Comentar si se está online
-@import './vendors/reset';
-@import '../twentyfifteen/style.css';
-@import '../fonts/src/font-awesome'; //Comentar si se está online
-@import '../fonts/src/font-mfizz';
-@import './vendors/spinners';
-@import './customs/var';
-@import './customs/breakpoints';
-@import './customs/customs';
-@import './partials/navbar';
-@import './partials/header';
-@import './partials/content';
-@import './partials/form';
-@import './partials/footer';
-@import './partials/modalcontact';
-@import './customs/parent';
-@import './partials/legal';
+@import './vendors/normalize',
+'./vendors/reset',
+'../twentyfifteen/style.css',
+'../fonts/src/font-awesome',
+'../fonts/src/font-mfizz',
+'./vendors/spinners',
+'./customs/var',
+'./customs/breakpoints',
+'./customs/customs',
+'./partials/navbar',
+'./partials/header',
+'./partials/content',
+'./partials/form',
+'./partials/footer',
+'./partials/modalcontact',
+'./customs/parent',
+'./partials/legal';

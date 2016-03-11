@@ -12,6 +12,8 @@ const babelify = require('babelify')
 const imagemin = require('gulp-imagemin')
 const pngquant = require('imagemin-pngquant')
 const imageminSvgo = require('imagemin-svgo')
+const imageminOptipng = require('imagemin-optipng')
+const imageminJpegtran = require('imagemin-jpegtran')
 const cache = require('gulp-cache')
 const del = require('del')
 // Para que babelify y jquery trabajen: instalar jquery, babel-preset-es2015 babel-preset-react
@@ -123,7 +125,12 @@ gulp.task('screenshot', () => {
       progressive: true,
       interlaced: true,
       multipass: true,
-      use: [pngquant(), imageminSvgo()],
+      use: [
+        pngquant(),
+        imageminSvgo(),
+        imageminOptipng({optimizationLevel: 7}),
+        imageminJpegtran({progressive: true})
+      ],
       svgoPlugins: [
         { removeViewBox: false }, // don't remove the viewbox atribute from the SVG
         { removeUselessStrokeAndFill: false }, // don't remove Useless Strokes and Fills

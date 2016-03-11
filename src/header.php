@@ -92,9 +92,7 @@
             </div>
             <nav class="nav__menu--navbar">
                   <ul id="navbarMenu" class="nav__menu--list">
-                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#responsive' ) ); ?>">Responsive</a></li>
-                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#projects' ) ); ?>">Proyectos</a></li>
-                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#articles' ) ); ?>">Art&#237culos</a></li>
+                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#articles' ) ); ?>">Mis Art&#237culos</a></li>
                       <li class="nav__menu--list--item"><a href="#openModal">Cont&#225ctame</a></li>
                   </ul>
             </nav>

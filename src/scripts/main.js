@@ -8,8 +8,6 @@ import doTransparentBar from './lib/doTransparentBar'
 import cookieConsent from './lib/cookieConsent'
 import loadJS from './lib/loadJS'
 import showProjects from './lib/showProjects'
-import showArticles from './lib/showArticles'
-import lastsArticles from './lib/lastsArticles'
 import showCategories from './lib/showCategories'
 import showTags from './lib/showTags'
 

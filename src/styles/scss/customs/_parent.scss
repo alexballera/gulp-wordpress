@@ -5,12 +5,12 @@ body{
   font-size: 16px;
   font-family: $font-awesome;
   background-color: white;
-  letter-spacing: 1.2px;
-  font-size: 1.1rem;
-  line-height: 1.2rem;
   @media screen and (min-width: 59.6875em){
     &:before {
       display: none;
+    }
+    & strong{
+      font-weight: bold;
     }
   }
 }
@@ -40,6 +40,10 @@ header.entry-header{
 }
 .entry-content {
   font-family: $font-awesome;
+  color: $black;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
   & h1{
   font-size: 1.5rem;
     @media screen and (min-width: $screen-md) {
@@ -56,6 +60,29 @@ header.entry-header{
     font-size: 1.1em;
     @media screen and (min-width: $screen-md) {
       font-size: 1.2em;
+    }
+  }
+  & blockquote{
+    margin: 2rem 3rem;
+    padding: 1rem;
+    border-left: 15px solid $orange;
+    border-right: 2px solid $orange;
+    box-shadow: 2px 2px 15px #ccc;
+    & p{
+      font: italic;
+      &:nth-child(1){
+        &::before{
+          content: "\201C";
+          color: #999;
+          font-size: 3rem;
+          font-weight: bold;
+        }
+      }
+      &:nth-child(last){
+        &::after{
+          content: "";
+        }
+      }
     }
   }
   & p{
@@ -98,8 +125,8 @@ footer.entry-footer{
     &.cat-links::before,
     &.edit-link::before,
     &.tags-links::before{
-      font-size: 1rem;
-      line-height: 1rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
   }
 }

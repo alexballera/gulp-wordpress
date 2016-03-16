@@ -75,7 +75,7 @@
     <!-- Barra de Navegaci&#243n -->
         <nav id="header" class="nav">
             <div class="nav__mobile">
-                  <a class="nav__mobile--logo" href="#">
+                  <a class="nav__mobile--logo" href="<?php echo esc_url( __('http://alexballera.com', 'twentyfifteen')); ?>" target="_blank">
                     <picture class="nav__mobile--logo--picture">
                       <source
                         srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
@@ -92,6 +92,7 @@
             </div>
             <nav class="nav__menu--navbar">
                   <ul id="navbarMenu" class="nav__menu--list">
+                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#articles' ) ); ?>">Art&#237culos</a></li>
                       <li class="nav__menu--list--item"><a href="#openModal">Cont&#225ctame</a></li>
                   </ul>
             </nav>

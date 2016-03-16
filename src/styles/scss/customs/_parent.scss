@@ -16,6 +16,18 @@ body{
 }
 .site-main {
   padding-top: $header-height;
+  & header.page-header{
+    & h1.page-title{
+      font-family: $font-awesome;
+    }
+    & div.taxonomy-description p{
+      font-family: $font-awesome;
+      text-align: justify;
+      letter-spacing: 1.2px;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+  }
 }
 /*
 * Single Post
@@ -124,7 +136,9 @@ footer.entry-footer{
     &.byline::before,
     &.cat-links::before,
     &.edit-link::before,
-    &.tags-links::before{
+    &.tags-links::before,
+    &.full-size-link::before,
+    &.comments-link::before{
       font-size: 1.5rem;
       line-height: 2rem;
     }

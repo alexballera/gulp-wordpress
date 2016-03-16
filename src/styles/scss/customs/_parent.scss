@@ -4,7 +4,7 @@
 body{
   font-size: 16px;
   font-family: $font-awesome;
-  color: grey;
+  background-color: white;
   letter-spacing: 1.2px;
   font-size: 1.1rem;
   line-height: 1.2rem;
@@ -146,7 +146,7 @@ div#disqus_thread{
   padding: 1rem;
 }
 /*
-* MailChimp
+* MailChimp Yikes
 */
 .yikes-mailchimp-container {
   & form.yikes-easy-mc-form label input{

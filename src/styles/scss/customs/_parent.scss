@@ -99,9 +99,8 @@ header.entry-header{
     }
   }
   & pre{
-    &.title-html{
-      background-color: $html;
-    }
+    border-left: 15px solid $orange;
+    border-right: 2px solid $orange;
   }
   & p{
     font-family: $font-awesome;
@@ -111,6 +110,11 @@ header.entry-header{
       font-weight: bolder;
       text-decoration: none;
     }
+  }
+  & ol{
+    list-style-type: decimal;
+    margin: 1rem;
+    margin-left: 2rem;
   }
 }
 .author{

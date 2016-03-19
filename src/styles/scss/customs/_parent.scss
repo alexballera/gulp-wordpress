@@ -1,6 +1,7 @@
 /*
 * Custom Partent Theme
 */
+$height: 300px;
 body{
   font-size: 16px;
   font-family: $font-awesome;
@@ -97,6 +98,23 @@ header.entry-header{
       }
     }
   }
+  & pre{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-left: 15px solid $orange;
+    background-color: $black;
+    color: white;
+    box-shadow: 2px 2px 15px #ccc;
+    font-family: source-code-pro,sans-serif;
+    @if $height{
+      overflow: scroll;
+      max-height: 300px;
+    }
+  }
+  // & code{
+  //   font-family: source-code-pro,sans-serif;
+  // }
   & p{
     font-family: $font-awesome;
     text-align: justify;

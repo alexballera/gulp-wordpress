@@ -147,8 +147,6 @@ gulp.task('clean', (cb) => {
 
 // Copy
 gulp.task('copy', () => {
-  // gulp.src(globs.fonts.src + '/**/*.*')
-  //   .pipe(gulp.dest(globs.fonts.dist))
   gulp.src(globs.fonts.src + '/fonts-mfizz/**/*.*')
     .pipe(gulp.dest(globs.fonts.dist + '/fonts-mfizz'))
   gulp.src(globs.fonts.src + '/fontawesome/**/*.*') // Comentar si se va a usar el cdnjs

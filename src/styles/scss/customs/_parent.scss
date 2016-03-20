@@ -101,6 +101,10 @@ header.entry-header{
   & pre{
     border-left: 15px solid $orange;
     border-right: 2px solid $orange;
+    font-size: 80%;
+      @include respond-to(md) {
+        font-size: 1rem;
+    }
   }
   & p{
     font-family: $font-awesome;
@@ -115,6 +119,12 @@ header.entry-header{
     list-style-type: decimal;
     margin: 1rem;
     margin-left: 2rem;
+  }
+  & img{
+    display: none;
+    @include respond-to(md) {
+      display: block;
+    }
   }
 }
 .author{

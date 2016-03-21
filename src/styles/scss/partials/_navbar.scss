@@ -3,7 +3,7 @@
 // Variables
 $header-height: 3rem;
 $header-mult: 1;
-$items: 4;
+$items: 2;
 
 #responsive,
 #projects,
@@ -136,21 +136,24 @@ $items: 4;
   &__menu--navbar{
     width: 100%;
     @include respond-to(md) {
-      width: (60%);
+      width: 60%;
       text-align: right;
     }
     @include respond-to(lg) {
-      width: (45%);
+      width: 30%;
     }
     @include respond-to(sm-landscape) {
       width: 100vw;
     }
   }
   &__menu--list{
+    display: flex;
+    justify-content: space-around;
     height: 0;
     overflow: hidden;
     list-style-type: none;
-    margin-right: 2em;
+    width: 75%;
+    margin: 0 auto;
     transition: all 0.3s ease;
     @include respond-to(md) {
       height: ($header-height*$header-mult);
@@ -158,23 +161,23 @@ $items: 4;
     &--show{
       height: 100%;
       transition: all 2s ease;
+      display: flex;
     }
     &--item{
       @include respond-to(md) {
-        display: inline-block;
         margin: 0;
         text-align: center;
         box-sizing: border-box;
-        width: ((100%/$items)-1);
+        width: 100%;
         &:nth-child(4){
           background-color: rgba(15,15,15,0.75);
         }
       }
         @include respond-to(sm-landscape) {
-          display: inline-block;
+          // display: inline-block;
           margin: 0 auto;
           text-align: center;
-          width: ((100%/$items)-1);
+          width: (100%/$items);
           padding: 0;
         }
       & a{

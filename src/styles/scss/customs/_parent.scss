@@ -99,8 +99,6 @@ header.entry-header{
     }
   }
   & pre{
-    border-left: 15px solid $orange;
-    border-right: 2px solid $orange;
     font-size: 80%;
       @include respond-to(md) {
         font-size: 1rem;
@@ -127,6 +125,9 @@ header.entry-header{
     }
   }
 }
+/*
+* Autor
+*/
 .author{
     &-info{
     font-family: $font-awesome;
@@ -149,6 +150,9 @@ header.entry-header{
     }
   }
 }
+/*
+* Footer
+*/
 footer.entry-footer{
   & span{
     font-size: 1rem;
@@ -164,6 +168,9 @@ footer.entry-footer{
     }
   }
 }
+/*
+* Comentarios
+*/
 .comment-respond{
   & h3{
     font-size: 2rem;
@@ -174,8 +181,14 @@ footer.entry-footer{
     font-size: 1rem;
   }
 }
+/*
+* Navegación de Entradas
+*/
 nav.post-navigation{
   & .nav-links{
+    @include respond-to(lg) {
+      display: flex;
+    }
   }
   font-family: $font-awesome;
   .nav-previous a span,
@@ -183,7 +196,9 @@ nav.post-navigation{
     font-family: $font-awesome;
   }
 }
-// Related Post
+/*
+* Related Post
+*/
 .jp-relatedposts-post{
   h4.jp-relatedposts-post-title{
     & a {

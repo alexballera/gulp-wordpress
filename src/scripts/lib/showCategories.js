@@ -2,11 +2,11 @@ import $ from 'jquery'
 
 var showCategories = $(() => {
   // Variables Globales
-  var $projectContainer = $('#showCategories').find('.ul-categories')
+  var $categoryContainer = $('#showCategories').find('.ul-categories')
 
   // Optimizamos con renderShows
   function renderShows (categories) {
-    $projectContainer.find('.loader').remove()
+    $categoryContainer.find('.loader').remove()
     categories.categories.forEach(function (project) {
       if (project.post_count) {
         var projectTemplate = template
@@ -16,15 +16,16 @@ var showCategories = $(() => {
       }
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
-      $projectContainer.append($projectTemplate.fadeIn(3500))
+      $categoryContainer.append($projectTemplate.fadeIn(3500))
     })
   }
   // Request
-  var template = `<li><a href="http://web.alexballera.com/:url:" target="_blank"><i class="fa fa-folder-o"></i> :title: (:count:)</a></li>`
+  var template = `<a href="http://web.alexballera.com/:url:" target="_blank"><i class="fa fa-folder-open-o"></i> :title: (:count:),
+  </a>`
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/categories/?order_by=count&order=DESC')
       .then((categories) => {
-        $projectContainer.find('.loader').remove()
+        $categoryContainer.find('.loader').remove()
         localStorage.categories = JSON.stringify(categories)
         renderShows(JSON.parse(localStorage.categories))
       })

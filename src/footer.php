@@ -2,12 +2,13 @@
         <footer class="footer">
             <div id="footer"></div>
             <div id="showCategories" class="footer__content">
-                <h3><i class="fa fa-folder-open"></i> Temas</h3>
-                <ul class="ul-categories">
-                    <li class="hide"><a href=""><i class="fa fa-folder-o"></i></a></li>
-                </ul>
+                <div class="ul-categories">
+                    <h3><i class="fa fa-folder-open"></i> Categorías</h3>
+                    <a href="" class="hide"><i class="fa fa-folder-open-o"></i></a>
+                </div>
                 <div class="tags">
-                    <h3><i class="fa fa-tags"></i> Etiquetas</h3><a href="" class="hide"><i class="fa fa-tag"></i></a>
+                    <h3><i class="fa fa-tags"></i> Etiquetas</h3>
+                    <a href="" class="hide"><i class="fa fa-tag"></i></a>
                 </div>
             </div>
             <div id="lastArticles" class="footer__content footer__articles">
@@ -23,9 +24,7 @@
             <div class="footer__contact">
               <div class="footer__social">
                 <h3>
-                <address>
-                  <a href="mailto:alexballera@gmail.com"><?php bloginfo('name'); ?></a>
-                </address>
+                  <a href="mailto:alexballera@gmail.com" title="Cont&#225ctame por email">Alex Ballera | Front End Developer</a>
                 </h3>
                 <p><?php bloginfo('description'); ?></p>
                 <p class="footer__social--p">Conoce y utiliza, entre otros, los siguientes lenguajes y frameworks:</p>

@@ -56,7 +56,7 @@
       & a {
         display: block;
         margin: 1rem auto 0.5rem auto;
-        width: 250px;
+        width: 225px;
         border-radius: 5px;
         padding: 1rem;
         color: $white;
@@ -69,7 +69,12 @@
           background-color: $purple;
           cursor: pointer;
         }
-    }
+        & i {
+          &.fa.fa-envelope-o{
+            margin-right: 0.5rem
+          }
+        }
+      }
     }
     &--title{
       padding: 1em 0;

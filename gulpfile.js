@@ -16,9 +16,9 @@ const imageminOptipng = require('imagemin-optipng')
 const imageminJpegtran = require('imagemin-jpegtran')
 const cache = require('gulp-cache')
 const del = require('del')
-// Para que babelify y jquery trabajen: instalar jquery, babel-preset-es2015 babel-preset-react
+// Para que babelify y jquery trabajen: instalar jquery, babel-preset-es2015
 // sudo npm install --save jquery
-// sudo npm install --save-dev babel-preset-es2015 babel-preset-react
+// sudo npm install --save-dev babel-preset-es2015
 
 // Variables
 const globs = {

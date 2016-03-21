@@ -2,11 +2,11 @@ import $ from 'jquery'
 
 var showTags = $(() => {
   // Variables Globales
-  var $projectContainer = $('#showCategories').find('.tags')
+  var $tagContainer = $('#showCategories').find('.tags')
 
   // Optimizamos con renderShows
   function renderShows (tags) {
-    $projectContainer.find('.loader').remove()
+    $tagContainer.find('.loader').remove()
     tags.tags.forEach(function (project) {
       if (project.post_count) {
         var projectTemplate = template
@@ -16,15 +16,16 @@ var showTags = $(() => {
       }
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
-      $projectContainer.append($projectTemplate.fadeIn(3500))
+      $tagContainer.append($projectTemplate.fadeIn(3500))
     })
   }
   // Request
-  var template = `<a href="http://web.alexballera.com/tag/:url:" target="_blank"><i class="fa fa-tag"></i> :title: (:count:),</a>`
+  var template = `<a href="http://web.alexballera.com/tag/:url:" target="_blank"><i class="fa fa-tag"></i> :title: (:count:),
+  </a>`
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/tags/?order_by=count&order=DESC')
       .then((tags) => {
-        $projectContainer.find('.loader').remove()
+        $tagContainer.find('.loader').remove()
         localStorage.tags = JSON.stringify(tags)
         renderShows(JSON.parse(localStorage.tags))
       })

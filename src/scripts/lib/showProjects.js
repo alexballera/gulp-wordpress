@@ -12,7 +12,6 @@ var showProjects = $(() => {
       var projectTemplate = templateArticles
       .replace(':title:', project.title)
       .replace(':url title:', project.title)
-      .replace(':figcaption:', project.title)
       .replace(':url:', project.short_URL)
       .replace(':image:', project.featured_image)
       .replace(':image alt:', project.title + ' Image')
@@ -50,7 +49,6 @@ var showProjects = $(() => {
     <section>
         <picture class="content__articles--post--picture">
             <img src=":image:" alt=":image alt:" width="300">
-            <figcaption>:figcaption:</figcaption>
         </picture>
         <h3>:title:</h3>
         <i class="fa fa-user"> :author:</i>

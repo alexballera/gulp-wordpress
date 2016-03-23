@@ -93,7 +93,7 @@
             <nav class="nav__menu--navbar">
                   <ul id="navbarMenu" class="nav__menu--list">
                       <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#articles' ) ); ?>">Art&#237;culos</a></li>
-                      <li class="nav__menu--list--item"><a href="#openModal">Cont&#225;ctame</a></li>
+                      <li class="nav__menu--list--item"><a href="#contactame">Cont&#225;ctame</a></li>
                   </ul>
             </nav>
         </nav>

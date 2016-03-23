@@ -38,17 +38,14 @@
                 </ul>
                 <h3>S&#237;gueme y cont&#225;ctame</h3>
                 <ul class="footer__social--redes">
-                  <li name="facebook"><a href="<?php echo esc_url( __( 'https://www.facebook.com/alexballera', 'twentyfifteen')); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="<?php echo esc_url( __( 'https://www.facebook.com/alexballera', 'twentyfifteen')); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="<?php echo esc_url( __( 'https://twitter.com/AlexBallera', 'twentyfifteen')); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="<?php echo esc_url( __( 'https://www.linkedin.com/in/alexballera', 'twentyfifteen')); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="<?php echo esc_url( __( 'https://plus.google.com/u/0/+AlexBallera/posts', 'twentyfifteen')); ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                 <li><a href="<?php echo esc_url( __('https://github.com/alexballera', 'twentyfifteen')); ?>" target="_blank"><i class="fa fa-github-alt"></i></a></li>
                 <li><a href="mailto:alex@alexballera.com"><i class="fa fa-envelope-o"></i></a></li>
                 </ul>
-                <a href="#openModal">
-                  <button class="informacion__boton" type="button"> <i class="fa fa-envelope-o"></i> Cont&#225;ctame
-                  </button>
-                </a>
+                  <a class="informacion__boton" type="button" href="#contactame"> <i class="fa fa-envelope-o"></i> Cont&#225;ctame</a>
               </div>
             </div>
         </footer>
@@ -60,7 +57,7 @@
       </ul>
     </section>
     <!-- Modal Contact -->
-        <div id="openModal" class="modalDialog">
+        <div id="openModal" class="modalDialog" style="display:none;">
             <div>
               <picture class="nav__mobile--logo--picture">
                 <source

@@ -84,7 +84,7 @@
                         src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50"
                         srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
                         http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x"
-                        alt="Alex Ballera" type="image/jpg">
+                        alt="Alex Ballera">
                         <figcaption>Alex Ballera | Front End Developer</figcaption>
                     </picture>
                   </a>

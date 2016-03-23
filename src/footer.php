@@ -70,7 +70,7 @@
                 src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50"
                 srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
                 http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x"
-                alt="<?php bloginfo('name'); ?>" type="image/jpg">
+                alt="<?php bloginfo('name'); ?>">
                 <figcaption><?php bloginfo('name'); ?></figcaption>
               </picture>
               <p><?php bloginfo('description'); ?></p>

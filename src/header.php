@@ -50,7 +50,7 @@
               "height": 60
             }
           },
-          "description": "Ha emprendido negocios en diferentes sectores. Actualmente, crea sitios responsivos optimizados para m&#243viles."
+          "description": "Ha emprendido negocios en diferentes sectores. Actualmente, crea sitios responsivos optimizados para m&#243;viles."
         }
     </script>
 
@@ -67,24 +67,24 @@
   <body>
     <!--[if lt  IE  8]>
     <p  class="browsehappy">
-      Est&#225s usando  un  navegador <strong>desactualizado</strong>.
+      Est&#225;s usando  un  navegador <strong>desactualizado</strong>.
       Por favor <a  href="http://browsehappy.com/">actualiza  tu  navegador</a>
       Para  mejorar la  experiencia..
     </p>
     <![endif]-->
-    <!-- Barra de Navegaci&#243n -->
+    <!-- Barra de Navegaci&#243;n -->
         <nav id="header" class="nav">
             <div class="nav__mobile">
                   <a class="nav__mobile--logo" href="<?php echo esc_url( __('http://alexballera.com', 'twentyfifteen')); ?>" target="_blank">
                     <picture class="nav__mobile--logo--picture">
                       <source
                         srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
-                        http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x">
+                        http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x" type="image/jpg">
                         <img
                         src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50"
                         srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
                         http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x"
-                        alt="Alex Ballera">
+                        alt="Alex Ballera" type="image/jpg">
                         <figcaption>Alex Ballera | Front End Developer</figcaption>
                     </picture>
                   </a>
@@ -92,9 +92,9 @@
             </div>
             <nav class="nav__menu--navbar">
                   <ul id="navbarMenu" class="nav__menu--list">
-                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#articles' ) ); ?>">Art&#237culos</a></li>
-                      <li class="nav__menu--list--item"><a href="#openModal">Cont&#225ctame</a></li>
+                      <li class="nav__menu--list--item"><a href="<?php echo esc_url( home_url( '/#articles' ) ); ?>">Art&#237;culos</a></li>
+                      <li class="nav__menu--list--item"><a href="#openModal">Cont&#225;ctame</a></li>
                   </ul>
             </nav>
         </nav>
-    <!-- Fin de Barra de Navegaci&#243n -->
+    <!-- Fin de Barra de Navegaci&#243;n -->

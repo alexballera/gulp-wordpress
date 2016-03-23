@@ -4,12 +4,12 @@
               <picture class="header__picture">
                   <source
                     srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300,
-                    http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=600 2x">
+                    http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=600 2x" type="image/jpg">
                     <img
                     src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300"
                     srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300,
                     http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=600 2x"
-                    alt="Alex Ballera">
+                    alt="Alex Ballera" type="image/jpg">
                   <figcaption class="header__picture--figcaption">
                       <span>Alex Ballera
                       <span>Front End Developer</span></span>
@@ -30,33 +30,33 @@
     <!-- Fin de Header -->
     <!-- Contenido -->
         <section class="content">
-              <!-- Servicios, Proyectos & Art&#237culos -->
-                    <!-- Art&#237culos -->
+              <!-- Servicios, Proyectos & Art&#237;culos -->
+                    <!-- Art&#237;culos -->
                           <article id="content_articles" class="content__articles content__articles--background">
                                 <div class="container">
                                       <div id="articles"></div>
-                                      <h2 class="content__articles--title title">&#191Qu&#233 quieres aprender hoy?</h2>
-                                      <!-- Inicio de los Art&#237culos -->
+                                      <h2 class="content__articles--title title">&#191;Qu&#233; quieres aprender hoy?</h2>
+                                      <!-- Inicio de los Art&#237;culos -->
                                       <div class="content__articles--container">
                                             <div class="loader">Loading...</div>
                                       </div>
-                                      <!-- Fin de los Art&#237culos -->
+                                      <!-- Fin de los Art&#237;culos -->
                                 </div>
                           </article>
-                    <!-- Fin de Art&#237culos -->
+                    <!-- Fin de Art&#237;culos -->
                     <!-- Begin MailChimp Signup Form -->
                       <div class="container form__container--purple">
                           <div id="mc_embed_signup" class="form content__responsive--form">
                                 <div class="form__content form__content--purple">
-                                  <h2>&#191Te gusta lo que lees? Suscr&#237bete!</h2> 
-                                  <p class="form__content--white">Si quieres recibir de primero mis &#250ltimos art&#237culos, s&#243lo tienes que dejar tu nombre y direcci&#243n de correo electr&#243nico <em>aqu&#237</em>.</p>
+                                  <h2>&#191;Te gusta lo que lees? Suscr&#237;bete!</h2> 
+                                  <p class="form__content--white">Si quieres recibir de primero mis &#250;ltimos art&#237;culos, s&#243;lo tienes que dejar tu nombre y direcci&#243;n de correo electr&#243;nico <em>aqu&#237;</em>.</p>
                                 </div>
                                 <form action="//alexballera.us8.list-manage.com/subscribe/post?u=8d7312e4347b5791968e24e78&amp;id=d7ed361251" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                       <div id="mc_embed_signup_scroll" class="form__email form__purple">
                                         <div class="indicates-required"><span class="asterisk">*</span> Requerido</div>
-                                          <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="*Tu nombre aqu&#237...">
-                                          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="*Tu email aqu&#237...">
-                                          <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2" placeholder="Deja tu mensaje aqu&#237...">
+                                          <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="*Tu nombre aqu&#237;...">
+                                          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="*Tu email aqu&#237;...">
+                                          <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2" placeholder="Deja tu mensaje aqu&#237;...">
                                           <div id="mce-responses" class="clear">
                                             <div class="response" id="mce-error-response"></div>
                                             <div class="response" id="mce-success-response"></div>
@@ -70,7 +70,7 @@
                           </div>
                         </div>
                     <!--End MailChimp Signup Form-->
-              <!-- Fin de Servicios, Proyectos & Art&#237culos -->
+              <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
         </section>
     <!-- Fin del Contenido -->
     <?php get_footer(); ?>

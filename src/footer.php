@@ -45,15 +45,15 @@
                 <li><a href="<?php echo esc_url( __('https://github.com/alexballera', 'twentyfifteen')); ?>" target="_blank"><i class="fa fa-github-alt"></i></a></li>
                 <li><a href="mailto:alex@alexballera.com"><i class="fa fa-envelope-o"></i></a></li>
                 </ul>
-                  <a class="informacion__boton" type="button" href="#contactame"> <i class="fa fa-envelope-o"></i> Cont&#225;ctame</a>
+                  <a class="informacion__boton" href="#contactame"> <i class="fa fa-envelope-o"></i> Cont&#225;ctame</a>
               </div>
             </div>
         </footer>
     <!-- Fin de Footer -->
     <section class="legal">
       <ul>
-        <li><a href="http://alexballera.com/legal.html" target="_blank" title="Términos Legales">Términos Legales</a></li>
-        <li><a href="http://alexballera.com/cookies.html" target="_blank" title="Política de Cookies">Política de Cookies</a></li>
+        <li><a href="http://alexballera.com/legal.html" target="_blank" title="Términos Legales"><h2>Términos Legales</h2></a></li>
+        <li><a href="http://alexballera.com/cookies.html" target="_blank" title="Política de Cookies"><h2>Política de Cookies</h2></a></li>
       </ul>
     </section>
     <!-- Modal Contact -->

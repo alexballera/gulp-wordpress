@@ -13,6 +13,9 @@ section.legal{
         &:hover{
           color: $orange;
         }
+        & h2{
+          font-size: 0.8rem;
+        }
       }
     }
   }

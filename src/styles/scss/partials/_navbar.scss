@@ -3,7 +3,7 @@
 // Variables
 $header-height: 3rem;
 $header-mult: 1;
-$items: 2;
+$items: 4;
 
 #responsive,
 #projects,
@@ -48,6 +48,7 @@ $items: 2;
       height: 0;
       height: auto;
       vertical-align: middle;
+      display: flex;
       order: 1;
       &--picture{
          transition: all 1.2s ease;
@@ -76,26 +77,26 @@ $items: 2;
             border: 3px solid $orange;
           }
         }
-        & figcaption{
-          color: $white;
-          margin-left: .5em;
-          font-size: 1.2em;
-          display: none;
+      }
+      & h2.title__nav{
+        color: $white;
+        margin-left: .5em;
+        font-size: 1.2em;
+        display: none;
+        transition: all 1.2s ease;
+        @include respond-to(xs) {
           transition: all 1.2s ease;
-          @include respond-to(xs) {
-            transition: all 1.2s ease;
-            display: block;
-          }
-          @include respond-to(md) {
-            transition: all 1.2s ease;
-            display: none;
-          }
-          @include respond-to(lg) {
-            transition: all 1.2s ease;
-            display: block;
-          }
+          display: block;
         }
-        & figcaption:hover{
+        @include respond-to(md) {
+          transition: all 1.2s ease;
+          display: none;
+        }
+        @include respond-to(lg) {
+          transition: all 1.2s ease;
+          display: block;
+        }
+        &:hover{
           color: $orange;
         }
       }
@@ -137,24 +138,21 @@ $items: 2;
   &__menu--navbar{
     width: 100%;
     @include respond-to(md) {
-      width: 60%;
+      width: (60%);
       text-align: right;
     }
     @include respond-to(lg) {
-      width: 30%;
+      width: (45%);
     }
     @include respond-to(sm-landscape) {
       width: 100vw;
     }
   }
   &__menu--list{
-    display: flex;
-    justify-content: space-around;
     height: 0;
     overflow: hidden;
     list-style-type: none;
-    width: 75%;
-    margin: 0 auto;
+    margin-right: 2em;
     transition: all 0.3s ease;
     @include respond-to(md) {
       height: ($header-height*$header-mult);
@@ -162,23 +160,23 @@ $items: 2;
     &--show{
       height: 100%;
       transition: all 2s ease;
-      display: flex;
     }
     &--item{
       @include respond-to(md) {
+        display: inline-block;
         margin: 0;
         text-align: center;
         box-sizing: border-box;
-        width: 100%;
+        width: ((100%/$items)-1);
         &:nth-child(4){
           background-color: rgba(15,15,15,0.75);
         }
       }
         @include respond-to(sm-landscape) {
-          // display: inline-block;
+          display: inline-block;
           margin: 0 auto;
           text-align: center;
-          width: (100%/$items);
+          width: ((100%/$items)-1);
           padding: 0;
         }
       & a{

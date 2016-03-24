@@ -85,8 +85,8 @@
                         srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,
                         http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=100 2x"
                         alt="Alex Ballera">
-                        <figcaption>Alex Ballera | Front End Developer</figcaption>
                     </picture>
+                    <h2 class="title__nav">Alex Ballera | Front End Developer</h2>
                   </a>
                   <button id="btnMenu" class="nav__mobile--btn inactive active"><i id="btnButton" class="fa fa-bars"></i></button>
             </div>

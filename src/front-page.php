@@ -10,13 +10,13 @@
                     srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300,
                     http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=600 2x"
                     alt="Alex Ballera">
-                  <figcaption class="header__picture--figcaption">
+              </picture>
+              <section class="header__languages">
+                  <h2 class="header__picture--figcaption">
                       <span>Alex Ballera
                       <span>Front End Developer</span></span>
                       <span>Mobile Optimization & Responsive Web Design</span>
-                  </figcaption>
-              </picture>
-              <section class="header__languages">
+                  </h2>
                     <ul class="header__languages--tech">
                           <li><i class="fa fa-html5"></i></li>
                           <li><i class="fa fa-css3"></i></li>

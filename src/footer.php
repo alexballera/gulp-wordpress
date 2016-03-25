@@ -3,7 +3,7 @@
             <div id="footer"></div>
             <div id="showCategories" class="footer__content">
                 <div class="ul-categories">
-                    <h3><i class="fa fa-folder-open"></i> Categorías</h3>
+                    <h3><i class="fa fa-folder-open"></i> Categor&#237;as</h3>
                     <a href="" class="hide"><i class="fa fa-folder-open-o"></i></a>
                 </div>
                 <div class="tags">
@@ -52,7 +52,7 @@
     <!-- Fin de Footer -->
     <section class="legal">
       <ul>
-        <li><a href="<?php echo esc_url( __('http://alexballera.com/legal.htm', 'twentyfifteen')); ?>" target="_blank" title="T&#233;rminos Legales"><h2>Términos Legales</h2></a></li>
+        <li><a href="<?php echo esc_url( __('http://alexballera.com/legal.htm', 'twentyfifteen')); ?>" target="_blank" title="T&#233;rminos Legales"><h2>T&#233;rminos Legales</h2></a></li>
         <li><a href="<?php echo esc_url( __('http://alexballera.com/cookies.htm', 'twentyfifteen')); ?>" target="_blank" title="Pol&#237;tica de Cookies"><h2>Pol&#237;tica de Cookies</h2></a></li>
       </ul>
     </section>

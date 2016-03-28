@@ -38,7 +38,7 @@
                                       <h2 class="content__articles--title title">&#191;Qu&#233; quieres aprender hoy?</h2>
                                       <!-- Inicio de los Art&#237;culos -->
                                       <div class="content__articles--container">
-                                            <div class="loader">Loading...</div>
+                                            <canvas id="spinner">Loading...</canvas>
                                       </div>
                                       <!-- Fin de los Art&#237;culos -->
                                 </div>

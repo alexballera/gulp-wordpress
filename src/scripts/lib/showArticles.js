@@ -7,7 +7,7 @@ var showArticles = $(() => {
 
   /** Show Articles **/
   function renderArticles (projects) {
-    $articleContainer.find('.loader').remove()
+    $articleContainer.find('#spinner').remove()
     projects.posts.forEach(function (project) {
       var projectTemplate = templateArticles
       .replace(':title:', project.title)
@@ -29,7 +29,7 @@ var showArticles = $(() => {
   }
   /** Show Lasts Articles **/
   function renderLastsArticles (projects) {
-    $lastsArticlesContainer.find('.loader').remove()
+    $lastsArticlesContainer.find('#spinner').remove()
     for (var i = 0; i < 6; i++) {
       var projectTemplate = templateLastsArticles
       .replace(':title:', projects.posts[i].title)
@@ -65,7 +65,7 @@ var showArticles = $(() => {
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts')
       .then((projects) => {
-        $articleContainer.find('.loader').remove()
+        $articleContainer.find('#spinner').remove()
         localStorage.projects = JSON.stringify(projects)
         renderArticles(JSON.parse(localStorage.projects))
         renderLastsArticles(JSON.parse(localStorage.projects))

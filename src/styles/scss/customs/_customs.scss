@@ -4,7 +4,7 @@ body{
   font-family: $font-awesome;
 }
 a{
-  text-decoration: none !important;
+  text-decoration: none;
 }
 h1{
   font-size: 1.8rem;
@@ -24,6 +24,14 @@ h3{
     font-size: 1.3em;
   }
 }
+pre{
+    border-left: 15px solid $orange;
+    border-right: 2px solid $orange;
+  }
+noscript iframe.google-tag{
+  display:none;
+  visibility:hidden;
+}
 .title{
   color: grey;
   padding: 2rem 0;
@@ -33,7 +41,4 @@ h3{
 }
 .hide{
   display: none;
-}
-.fa{
-  text-rendering: auto;
 }

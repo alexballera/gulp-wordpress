@@ -1,33 +1,27 @@
-import $ from 'jquery'
+var showTags = () => {
+  var containerTags = document.querySelector('#tags')
+  var template = ''
+  var containerInner = document.createElement('div')
 
-var showTags = $(() => {
-  // Variables Globales
-  var $tagContainer = $('#showCategories').find('.tags')
-
-  // Optimizamos con renderShows
-  function renderShows (tags) {
-    $tagContainer.find('.loader').remove()
-    tags.tags.forEach(function (project) {
-      if (project.post_count) {
-        var projectTemplate = template
-        .replace(':title:', project.name)
-        .replace(':url:', project.slug)
-        .replace(':count:', project.post_count)
+  function renderTags (tags) {
+    tags.tags.forEach((elem) => {
+      if (elem.post_count) {
+        template += `<a href="http://web.alexballera.com/tag/${elem.slug} " target="_blank">
+          <i class="fa fa-tag"></i>${elem.name} (${elem.post_count}),
+          </a>`
       }
-      var $projectTemplate = $(projectTemplate)
-      $projectTemplate.hide()
-      $tagContainer.append($projectTemplate.fadeIn(3500))
     })
+    containerInner.innerHTML = template
+    containerTags.appendChild(containerInner)
   }
-  // Request
-  var template = `<a href="http://web.alexballera.com/tag/:url:" target="_blank"><i class="fa fa-tag"></i> :title: (:count:),
-  </a>`
 
-  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/tags/?order_by=count&order=DESC')
-      .then((tags) => {
-        $tagContainer.find('.loader').remove()
-        localStorage.tags = JSON.stringify(tags)
-        renderShows(JSON.parse(localStorage.tags))
-      })
-})
+  fetch('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/tags/?order_by=count&order=DESC')
+  .then((response) => {
+    return response.json()
+  })
+  .then((tags) => {
+    localStorage.tags = JSON.stringify(tags)
+    renderTags(JSON.parse(localStorage.tags))
+  })
+}
 module.exports = showTags

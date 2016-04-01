@@ -2,18 +2,18 @@
         <footer class="footer">
             <div id="footer"></div>
             <div id="showCategories" class="footer__content">
-                <div class="ul-categories">
+                <div class="ul-categories" id="ul-categories">
                     <h3><i class="fa fa-folder-open"></i> Categor&#237;as</h3>
                     <a href="" class="hide"><i class="fa fa-folder-open-o"></i></a>
                 </div>
-                <div class="tags">
+                <div class="tags" id="tags">
                     <h3><i class="fa fa-tags"></i> Etiquetas</h3>
                     <a href="" class="hide"><i class="fa fa-tag"></i></a>
                 </div>
             </div>
             <div id="lastArticles" class="footer__content footer__articles">
                 <h3><i class="fa fa-file"></i> &#218;ltimos art&#237;culos</h3>
-                <ul class="ul-articles">
+                <ul class="ul-articles" id="lastsArticles">
                   <li class="hide">
                     <a href="" target="_blank">
                       <i class="fa fa-file-text-o"></i>

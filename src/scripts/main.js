@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import modernizr from './vendors/modernizr.js'
 import selectivizr from './vendors/selectivizr.js'
 import retinajs from './vendors/retina.js'
@@ -32,6 +31,15 @@ import showTags from './lib/showTags'
 
 // Cookies
     cookieConsent()
+
+// Articles
+    showArticles()
+
+// Tags
+    showTags()
+
+// Categories
+    showCategories()
 
   // Load JS
     var urlJs = [

@@ -1,74 +1,48 @@
-import $ from 'jquery'
+var showArticles = () => {
+  var containerArticles = document.querySelector('#showArticles'),
+    containerLastsArticles = document.querySelector('#lastsArticles'),
+    templateArticles = '',
+    templateLasts = ''
 
-var showArticles = $(() => {
-  // Variables Globales
-  var $articleContainer = $('#content_articles').find('.content__articles--container')
-  var $lastsArticlesContainer = $('#lastArticles').find('.ul-articles')
-
-  /** Show Articles **/
-  function renderArticles (projects) {
-    $articleContainer.find('#spinner').remove()
-    projects.posts.forEach(function (project) {
-      var projectTemplate = templateArticles
-      .replace(':title:', project.title)
-      .replace(':url title:', project.title)
-      .replace(':url:', project.short_URL)
-      .replace(':image:', project.featured_image)
-      .replace(':image alt:', project.title + ' Image')
-      .replace(':author:', project.author.name)
-      .replace(':year:', project.date.split('-')[0])
-      .replace(':month:', project.date.split('-')[1])
-      .replace(':day1:', project.date.split('-')[2].split('')[0])
-      .replace(':day2:', project.date.split('-')[2].split('')[1])
-      .replace(':category:', Object.keys(project.categories))
-      .replace(':tags:', Object.keys(project.tags))
-      var $projectTemplate = $(projectTemplate)
-      $projectTemplate.hide()
-      $articleContainer.append($projectTemplate.fadeIn(3500))
+  // Show Articles
+  function renderArticles (articles) {
+    articles.posts.forEach((elem) => {
+      templateArticles += `<a class="content__articles--post" href="${elem.short_URL}" target="_blank" title="${elem.title}">
+      <section>
+          <picture class="content__articles--post--picture">
+              <img src="${elem.post_thumbnail.URL}" alt="${elem.title}" width="300">
+          </picture>
+          <h3>${elem.title}</h3>
+          <i class="fa fa-user"> ${elem.author.name}</i>
+          <i class="fa fa-calendar"> ${elem.date.split('-')[2].split('')[0]}${elem.date.split('-')[2].split('')[1]}/${elem.date.split('-')[1]}/${elem.date.split('-')[0]}</i>
+          <i class="fa fa-folder-open-o"> ${Object.keys(elem.categories)}</i>
+          <i class="fa fa-tags"> ${Object.keys(elem.tags)} </i>
+      </section>
+    </a>`
     })
+    containerArticles.innerHTML = templateArticles
   }
-  /** Show Lasts Articles **/
-  function renderLastsArticles (projects) {
-    $lastsArticlesContainer.find('#spinner').remove()
+
+  // Show Lasts Articles
+  function renderLastsArticles (articles) {
     for (var i = 0; i < 6; i++) {
-      var projectTemplate = templateLastsArticles
-      .replace(':title:', projects.posts[i].title)
-      .replace(':url:', projects.posts[i].short_URL)
-      .replace(':year:', projects.posts[i].date.split('-')[0])
-      .replace(':month:', projects.posts[i].date.split('-')[1])
-      .replace(':day1:', projects.posts[i].date.split('-')[2].split('')[0])
-      .replace(':day2:', projects.posts[i].date.split('-')[2].split('')[1])
-
-      var $projectTemplate = $(projectTemplate)
-      $projectTemplate.hide()
-      $lastsArticlesContainer.append($projectTemplate.fadeIn(3500))
+        templateLasts += `<li>
+      <a href="${articles.posts[i].short_URL}" target="_blank">
+        <i class="fa fa-file-text-o"></i> ${articles.posts[i].title} - ${articles.posts[i].date.split('-')[2].split('')[0]}${articles.posts[i].date.split('-')[2].split('')[1]}/${articles.posts[i].date.split('-')[1]}/${articles.posts[i].date.split('-')[0]}
+      </a>
+    </li>`
     }
+    containerLastsArticles.innerHTML = templateLasts
   }
-  /** Templates **/
-  var templateArticles = `<a class="content__articles--post" href=":url:" target="_blank" title=":url title:">
-    <section>
-        <picture class="content__articles--post--picture">
-            <img src=":image:" alt=":image alt:" width="300">
-        </picture>
-        <h3>:title:</h3>
-        <i class="fa fa-user"> :author:</i>
-        <i class="fa fa-calendar"> :day1::day2:/:month:/:year:</i>
-        <i class="fa fa-folder-open-o"> :category:</i>
-        <i class="fa fa-tags"> :tags: </i>
-    </section>
-  </a>`
-  var templateLastsArticles = `<li>
-    <a href=":url:" target="_blank">
-      <i class="fa fa-file-text-o"></i> :title: - :day1::day2:/:month:/:year:
-    </a>
-  </li>`
 
-  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts')
-      .then((projects) => {
-        $articleContainer.find('#spinner').remove()
-        localStorage.projects = JSON.stringify(projects)
-        renderArticles(JSON.parse(localStorage.projects))
-        renderLastsArticles(JSON.parse(localStorage.projects))
-      })
-})
+  fetch('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts')
+  .then((response) => {
+    return response.json()
+  })
+  .then((articles) => {
+    localStorage.articles = JSON.stringify(articles)
+    renderArticles(JSON.parse(localStorage.articles))
+    renderLastsArticles(JSON.parse(localStorage.articles))
+  })
+}
 module.exports = showArticles
